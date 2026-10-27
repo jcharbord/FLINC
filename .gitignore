@@ -1,0 +1,26 @@
+# Huge/generated objects
+objects/
+results/
+reports/
+logs/
+
+# Pixi local environment cache
+.pixi/
+
+# R/session junk
+.Rhistory
+.RData
+.Rproj.user/
+
+# macOS
+.DS_Store
+Fig1_repro_audit_bundle.zip
+Rplots.pdf
+
+# Local participant inputs and environment secrets
+data/
+*.rds
+*.rda
+*.rdata
+.env
+.env.*

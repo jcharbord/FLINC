@@ -1,0 +1,50 @@
+Timestamp:
+[1] "2026-07-01 22:29:21 CEST"
+
+R version:
+[1] "R version 4.2.3 (2023-03-15)"
+
+.libPaths():
+[1] "/Library/Frameworks/R.framework/Versions/4.2/Resources/library"
+
+Sys.info():
+                                                                                               sysname 
+                                                                                              "Darwin" 
+                                                                                               release 
+                                                                                              "21.2.0" 
+                                                                                               version 
+"Darwin Kernel Version 21.2.0: Sun Nov 28 20:28:41 PST 2021; root:xnu-8019.61.5~1/RELEASE_ARM64_T6000" 
+                                                                                              nodename 
+                                                                                       "yuvaranimambp" 
+                                                                                               machine 
+                                                                                              "x86_64" 
+                                                                                                 login 
+                                                                                              "jianwu" 
+                                                                                                  user 
+                                                                                              "jianwu" 
+                                                                                        effective_user 
+                                                                                              "jianwu" 
+
+Thread settings:
+       OMP_NUM_THREADS   OPENBLAS_NUM_THREADS        MKL_NUM_THREADS 
+                   "4"                    "4"                    "4" 
+VECLIB_MAXIMUM_THREADS    NUMEXPR_NUM_THREADS 
+                   "4"                    "4" 
+
+sessionInfo():
+R version 4.2.3 (2023-03-15)
+Platform: x86_64-apple-darwin17.0 (64-bit)
+Running under: macOS Big Sur ... 10.16
+
+Matrix products: default
+BLAS:   /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRblas.0.dylib
+LAPACK: /Library/Frameworks/R.framework/Versions/4.2/Resources/lib/libRlapack.dylib
+
+locale:
+[1] C/UTF-8/C/C/C/C
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+[1] compiler_4.2.3

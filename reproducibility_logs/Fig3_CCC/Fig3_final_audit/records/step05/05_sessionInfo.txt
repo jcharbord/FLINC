@@ -1,0 +1,18 @@
+R version 4.4.3 (2025-02-28)
+Platform: aarch64-apple-darwin20.0.0
+Running under: macOS Monterey 12.1
+
+Matrix products: default
+BLAS/LAPACK: /Users/jianwu/miniforge3/envs/r44-liana/lib/libopenblas.0.dylib;  LAPACK version 3.12.0
+
+locale:
+[1] C/UTF-8/C/C/C/C
+
+time zone: Europe/Stockholm
+tzcode source: system (macOS)
+
+attached base packages:
+[1] stats     graphics  grDevices utils     datasets  methods   base     
+
+loaded via a namespace (and not attached):
+[1] compiler_4.4.3 tools_4.4.3    digest_0.6.39 

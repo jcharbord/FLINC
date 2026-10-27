@@ -1,0 +1,201 @@
+figure_panel	module	gene_name	functional_subcategory	category_order	category_color_hex
+C	SM_1	MYL9	Cytoskeleton	2	#4FAC5B
+C	SM_1	CXCL12	Immune process	3	#F4C243
+C	SM_1	TXNIP	Oxidative stress	4	#FEFE55
+C	SM_1	UBD	Immune process	3	#F4C243
+C	SM_1	COL6A2	ECM	1	#1432F3
+C	SM_1	LSP1	Immune process	3	#F4C243
+C	SM_1	DPT	ECM	1	#1432F3
+C	SM_1	MFAP4	ECM	1	#1432F3
+C	SM_1	SPARC	ECM	1	#1432F3
+C	SM_1	BGN	ECM	1	#1432F3
+C	SM_1	PTPRC	Immune process	3	#F4C243
+C	SM_1	CCL19	Immune process	3	#F4C243
+C	SM_1	IGKC	Immune process	3	#F4C243
+C	SM_1	PSAP	Immune process	3	#F4C243
+C	SM_1	KCTD12	Regulation	6	#69349B
+C	SM_1	ARHGDIB	Immune process	3	#F4C243
+C	SM_1	TIMP2	ECM	1	#1432F3
+C	SM_1	TAGLN2	Cytoskeleton	2	#4FAC5B
+C	SM_1	GPNMB	Immune process	3	#F4C243
+C	SM_1	ACTA2	Cytoskeleton	2	#4FAC5B
+C	SM_1	FBLN5	ECM	1	#1432F3
+C	SM_1	TYROBP	Immune process	3	#F4C243
+C	SM_1	MYH9	Cytoskeleton	2	#4FAC5B
+C	SM_1	SOD3	ECM	1	#1432F3
+C	SM_1	MARCKS	Cytoskeleton	2	#4FAC5B
+C	SM_1	LBH	Regulation	6	#69349B
+C	SM_1	ADAMTSL2	ECM	1	#1432F3
+C	SM_1	LTBP4	ECM	1	#1432F3
+C	SM_1	GSTP1	Oxidative stress	4	#FEFE55
+C	SM_1	LAPTM5	Immune process	3	#F4C243
+C	SM_1	COL1A2	ECM	1	#1432F3
+C	SM_1	LYZ	Immune process	3	#F4C243
+C	SM_1	HLA-DRA	Oxidative stress	4	#FEFE55
+C	SM_1	CD74	Immune process	3	#F4C243
+C	SM_1	VIM	Cytoskeleton	2	#4FAC5B
+C	SM_1	TMSB4X	Cytoskeleton	2	#4FAC5B
+C	SM_1	IGFBP7	ECM	1	#1432F3
+C	SM_1	PTGDS	Secreted lipid mediator	5	#E93323
+C	SM_1	HLA-DPA1	Immune process	3	#F4C243
+C	SM_1	C7	Immune process	3	#F4C243
+C	SM_1	ACTB	Cytoskeleton	2	#4FAC5B
+C	SM_1	TIMP1	ECM	1	#1432F3
+C	SM_1	LUM	ECM	1	#1432F3
+C	SM_1	COL1A1	ECM	1	#1432F3
+C	SM_1	DCN	ECM	1	#1432F3
+C	SM_1	HLA-DPB1	Immune process	3	#F4C243
+C	SM_1	FLNA	Cytoskeleton	2	#4FAC5B
+C	SM_1	AEBP1	ECM	1	#1432F3
+C	SM_1	COL3A1	ECM	1	#1432F3
+C	SM_1	S100A6	Cytoskeleton	2	#4FAC5B
+D	SM_2	UBE2L6	ISGylation	4	#FEFE55
+D	SM_2	OAS3	OAS	2	#4FAC5B
+D	SM_2	GPX2	Stress	6	#69349B
+D	SM_2	IFI44	ISGs	1	#1432F3
+D	SM_2	IFIT3	ISGs	1	#1432F3
+D	SM_2	STAT1	IFN signaling	5	#E93323
+D	SM_2	IFITM3	Restriction	3	#F4C243
+D	SM_2	LAP3	Stress	6	#69349B
+D	SM_2	IRF7	IFN signaling	5	#E93323
+D	SM_2	RAB5IF	Stress	6	#69349B
+D	SM_2	SHISA5	Stress	6	#69349B
+D	SM_2	PLSCR1	ISGs	1	#1432F3
+D	SM_2	EPSTI1	ISGs	1	#1432F3
+D	SM_2	CMPK2	Stress	6	#69349B
+D	SM_2	IFI44L	ISGs	1	#1432F3
+D	SM_2	IRF9	IFN signaling	5	#E93323
+D	SM_2	IFITM2	Restriction	3	#F4C243
+D	SM_2	TNFSF14	IFN signaling	5	#E93323
+D	SM_2	CST3	Stress	6	#69349B
+D	SM_2	XAF1	Stress	6	#69349B
+D	SM_2	B2M	ISGs	1	#1432F3
+D	SM_2	ISG15	ISGylation	4	#FEFE55
+D	SM_2	IFI27	ISGs	1	#1432F3
+D	SM_2	IFI6	ISGs	1	#1432F3
+D	SM_2	BST2	Restriction	3	#F4C243
+D	SM_2	MX1	Restriction	3	#F4C243
+D	SM_2	OAS1	OAS	2	#4FAC5B
+D	SM_2	LGALS3BP	Stress	6	#69349B
+D	SM_2	OASL	OAS	2	#4FAC5B
+D	SM_2	OAS2	OAS	2	#4FAC5B
+E	SM_3	CYP51A1	Cholesterol synthesis	1	#1432F3
+E	SM_3	FASN	Lipogenesis	5	#E93323
+E	SM_3	EBP	Sterol processing	2	#4FAC5B
+E	SM_3	SC5D	Sterol processing	2	#4FAC5B
+E	SM_3	ERG28	Sterol processing	2	#4FAC5B
+E	SM_3	INSIG1	Sterol regulation	3	#F4C243
+E	SM_3	TM7SF2	Sterol processing	2	#4FAC5B
+E	SM_3	FABP1	Hepatocyte genes	6	#69349B
+E	SM_3	NSDHL	Sterol processing	2	#4FAC5B
+E	SM_3	CYP3A5	Hepatocyte genes	6	#69349B
+E	SM_3	MVK	Mevalonate pathway	4	#FEFE55
+E	SM_3	RDH11	Hepatocyte genes	6	#69349B
+E	SM_3	FADS2	Lipogenesis	5	#E93323
+E	SM_3	MMAB	Hepatocyte genes	6	#69349B
+E	SM_3	SCD	Lipogenesis	5	#E93323
+E	SM_3	FADS1	Lipogenesis	5	#E93323
+E	SM_3	HMGCR	Cholesterol synthesis	1	#1432F3
+E	SM_3	DHCR24	Sterol processing	2	#4FAC5B
+E	SM_3	ACSS2	Hepatocyte genes	6	#69349B
+E	SM_3	LGALS4	Hepatocyte genes	6	#69349B
+E	SM_3	DHCR7	Sterol processing	2	#4FAC5B
+E	SM_3	LSS	Cholesterol synthesis	1	#1432F3
+E	SM_3	MVD	Mevalonate pathway	4	#FEFE55
+E	SM_3	IDI1	Mevalonate pathway	4	#FEFE55
+E	SM_3	FDFT1	Cholesterol synthesis	1	#1432F3
+E	SM_3	FDPS	Mevalonate pathway	4	#FEFE55
+E	SM_3	ACAT2	Hepatocyte genes	6	#69349B
+E	SM_3	TMEM97	Sterol processing	2	#4FAC5B
+E	SM_3	MSMO1	Sterol processing	2	#4FAC5B
+E	SM_3	SQLE	Cholesterol synthesis	1	#1432F3
+F	SM_4	SERPINA5	Secreted	1	#1432F3
+F	SM_4	IGFBP4	Secreted	1	#1432F3
+F	SM_4	GPD1	Lipid	3	#F4C243
+F	SM_4	ENO3	Regulatory	6	#69349B
+F	SM_4	LECT2	Secreted	1	#1432F3
+F	SM_4	PRAP1	Regulatory	6	#69349B
+F	SM_4	PHYH	Lipid	3	#F4C243
+F	SM_4	REEP6	Regulatory	6	#69349B
+F	SM_4	CDHR5	Regulatory	6	#69349B
+F	SM_4	COMT	Small-molecule	5	#E93323
+F	SM_4	CEBPA	Regulatory	6	#69349B
+F	SM_4	SLCO1B1	Transporters	2	#4FAC5B
+F	SM_4	CYP4V2	Small-molecule	5	#E93323
+F	SM_4	HGFAC	Secreted	1	#1432F3
+F	SM_4	SLC22A1	Transporters	2	#4FAC5B
+F	SM_4	KHK	Small-molecule	5	#E93323
+F	SM_4	GPAM	Lipid	3	#F4C243
+F	SM_4	SIGIRR	Regulatory	6	#69349B
+F	SM_4	UPB1	Small-molecule	5	#E93323
+F	SM_4	SLC22A7	Transporters	2	#4FAC5B
+F	SM_4	ACAT1	Lipid	3	#F4C243
+F	SM_4	FTCD	Amino acid/urea	4	#FEFE55
+F	SM_4	AFM	Secreted	1	#1432F3
+F	SM_4	ATF5	Regulatory	6	#69349B
+F	SM_4	ERRFI1	Regulatory	6	#69349B
+F	SM_4	DGAT2	Lipid	3	#F4C243
+F	SM_4	GATM	Amino acid/urea	4	#FEFE55
+F	SM_4	ECHDC2	Regulatory	6	#69349B
+F	SM_4	SERPINF1	Secreted	1	#1432F3
+F	SM_4	DPYS	Small-molecule	5	#E93323
+G	SM_5	LIPA	Vesicle/lysosome	3	#F4C243
+G	SM_5	PPIB	Ubiquitin/proteostasis	4	#FEFE55
+G	SM_5	ERBB2	Membrane signaling	2	#4FAC5B
+G	SM_5	FBXO2	Ubiquitin/proteostasis	4	#FEFE55
+G	SM_5	POLR2L	Transcription/metabolism	6	#69349B
+G	SM_5	TMED2	Vesicle/lysosome	3	#F4C243
+G	SM_5	VCP	Ubiquitin/proteostasis	4	#FEFE55
+G	SM_5	AP2M1	Vesicle/lysosome	3	#F4C243
+G	SM_5	CDKN1A	Early stress	1	#1432F3
+G	SM_5	STBD1	Vesicle/lysosome	3	#F4C243
+G	SM_5	TMED9	Vesicle/lysosome	3	#F4C243
+G	SM_5	ACOT12	Transcription/metabolism	6	#69349B
+G	SM_5	ENO1	Transcription/metabolism	6	#69349B
+G	SM_5	HNRNPAB	Transcription/metabolism	6	#69349B
+G	SM_5	BEX3	Early stress	1	#1432F3
+G	SM_5	OAZ1	Ubiquitin/proteostasis	4	#FEFE55
+G	SM_5	TXN	Early stress	1	#1432F3
+G	SM_5	LAMP1	Vesicle/lysosome	3	#F4C243
+G	SM_5	TM4SF4	Membrane signaling	2	#4FAC5B
+G	SM_5	COPE	Vesicle/lysosome	3	#F4C243
+G	SM_5	RHOB	Cytoskeletal remodeling	5	#E93323
+G	SM_5	MFSD2A	Membrane signaling	2	#4FAC5B
+G	SM_5	TCEA2	Transcription/metabolism	6	#69349B
+G	SM_5	FNDC5	Membrane signaling	2	#4FAC5B
+G	SM_5	ELOVL2	Transcription/metabolism	6	#69349B
+G	SM_5	PPDPF	Ubiquitin/proteostasis	4	#FEFE55
+G	SM_5	POR	Transcription/metabolism	6	#69349B
+G	SM_5	TGM2	Cytoskeletal remodeling	5	#E93323
+G	SM_5	SDC1	Membrane signaling	2	#4FAC5B
+G	SM_5	SERF2	Ubiquitin/proteostasis	4	#FEFE55
+H	SM_6	ORM2	Acute-phase response	3	#F4C243
+H	SM_6	FGA	Coagulation factors	1	#1432F3
+H	SM_6	FGB	Coagulation factors	1	#1432F3
+H	SM_6	SLC27A5	Metabolism/transport	6	#69349B
+H	SM_6	KNG1	Coagulation factors	1	#1432F3
+H	SM_6	HMGCS2	Metabolism/transport	6	#69349B
+H	SM_6	ADH4	Metabolism/transport	6	#69349B
+H	SM_6	TF	Plasma carriers	4	#FEFE55
+H	SM_6	C3	Complement system	2	#4FAC5B
+H	SM_6	CPS1	Metabolism/transport	6	#69349B
+H	SM_6	SELENOP	Plasma carriers	4	#FEFE55
+H	SM_6	APOC1	Plasma carriers	4	#FEFE55
+H	SM_6	APOB	Plasma carriers	4	#FEFE55
+H	SM_6	TTR	Plasma carriers	4	#FEFE55
+H	SM_6	EPHX1	Metabolism/transport	6	#69349B
+H	SM_6	HP	Acute-phase response	3	#F4C243
+H	SM_6	VTN	Plasma carriers	4	#FEFE55
+H	SM_6	AGXT	Metabolism/transport	6	#69349B
+H	SM_6	FGG	Coagulation factors	1	#1432F3
+H	SM_6	A1BG	Acute-phase response	3	#F4C243
+H	SM_6	AMBP	Metabolism/transport	6	#69349B
+H	SM_6	MAT1A	Metabolism/transport	6	#69349B
+H	SM_6	SERPINC1	Coagulation factors	1	#1432F3
+H	SM_6	AZGP1	Plasma carriers	4	#FEFE55
+H	SM_6	HPX	Antioxidant/heme binding	5	#E93323
+H	SM_6	ITIH4	Acute-phase response	3	#F4C243
+H	SM_6	APOC3	Plasma carriers	4	#FEFE55
+H	SM_6	DCXR	Metabolism/transport	6	#69349B
+H	SM_6	GC	Plasma carriers	4	#FEFE55
+H	SM_6	RBP4	Plasma carriers	4	#FEFE55

@@ -1,0 +1,41 @@
+module	gene	annotation	curation_basis
+SM_1	ABCB4	Transport / homeostasis	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	DEPP1	Stress / signalling	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	RGS5	Fibrosis / ECM	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	SPARCL1	Fibrosis / ECM	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	EEF2	Other	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	TP53INP1	Stress / signalling	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	MYH10	Structure / adhesion	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	HEPH	Transport / homeostasis	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	SPACA6	Other	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	NRARP	Stress / signalling	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	PTN	Fibrosis / ECM	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	FLRT2	Structure / adhesion	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	HNRNPU	Other	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	IGLV3-1	Immune / inflammation	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	CCL28	Immune / inflammation	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	BMP5	Fibrosis / ECM	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	CACNA2D1	Transport / homeostasis	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	SLC22A17	Transport / homeostasis	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	SGCB	Structure / adhesion	Extended functional-context curation for Figure 4 ego-network candidate
+SM_1	SSBP2	Other	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	CETN2	Other	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	GLO1	Metabolism / detoxification	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	TRIB3	Stress / signalling	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	SLC16A13	Other	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	TLCD1	Lipid metabolism	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	RBCK1	Immune / inflammation	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	VIL1	Other	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	CISH	Immune / inflammation	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	COL27A1	Fibrosis / ECM	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	PGD	Metabolism / detoxification	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	VPS37D	Other	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	CERS4	Lipid metabolism	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	POLD2	Other	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	ALKBH6	Other	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	ECHDC1	Lipid metabolism	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	SCD	Lipid metabolism	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	ELOVL5	Lipid metabolism	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	ECH1	Lipid metabolism	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	ASCL1	Other	Extended functional-context curation for Figure 4 ego-network candidate
+SM_3	QPRT	Immune / inflammation	Extended functional-context curation for Figure 4 ego-network candidate
