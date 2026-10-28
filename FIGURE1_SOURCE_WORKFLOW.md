@@ -130,23 +130,10 @@ This checks:
 
 The validation step does not rerun the biological analysis.
 
-## Source history
-
-Historical source files are retained under:
-
-`scripts/source_history/`
-
-The main analysis script internally uses the preserved R Markdown analytical
-source stored there. Users normally launch the reader-facing analysis script
-rather than manually executing the historical preparation files.
-
-Historical run-record filenames are intentionally retained unchanged because
-they document the validated reference execution.
-
 ## Integrity manifest
 
 `FIGURE1_SHA256.txt` records the SHA-256 checksums of the public Figure 1
-documentation and figure-specific scripts. From the reproducibility root, run:
+documentation, main Stage 2 analysis and figure-specific scripts. From the reproducibility root, run:
 
 ```bash
 shasum -a 256 -c FIGURE1_SHA256.txt

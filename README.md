@@ -36,8 +36,7 @@ Figure 2 spatial coexpression and supplementary donor-level GSEA workflow is
 stored under `scripts/figure2/`. The Figure 3 LIANA cell-cell communication,
 stage-activity and spatial LR-mapping workflow is stored under
 `scripts/figure3/`. The Figure 4 regulatory and strict secreted-factor
-workflow is stored under `scripts/figure4/`. Historical analytical source files for the main spatial
-clustering workflow are retained under `scripts/source_history/`.
+workflow is stored under `scripts/figure4/`.
 
 ## Required input data
 
@@ -367,34 +366,3 @@ The Figure 2 workflow can subsequently be run in the order documented in
 
 The Figure 3 workflow can subsequently be run in the order documented in
 `scripts/figure3/README.md`.
-
-## Source history
-
-`scripts/source_history/` contains historical analytical source files retained
-for traceability. The reader-facing Stage 2 script uses the preserved R Markdown
-analytical source internally.
-
-## Portability
-
-This version documents the validated reference implementation on the original
-Mac analysis environment.
-
-Cross-platform environment reconstruction and Linux portability are separate
-steps. Future portability work may add environment-management or
-containerization files and replace machine-specific paths without changing the
-underlying scientific analysis.
-
-## Repository layout and license
-
-The workflow now sits directly at this repository's root. Old commands referring
-to `/Users/jianwu/Documents/FLINC/Jeremie/Reproducible_code` describe the original
-Mac folder. They do not require that nested structure on GitHub. Scripts retain
-their original path assumptions; use the documented environment/path settings
-when working on a different machine.
-
-The migration preserved the analysis scripts and scientific reference files.
-It did not rerun the biological analyses or import the old repository's Git
-history. Human-participant input data and large objects are external inputs.
-
-Jian Wu's original STRIDE scripts and copyright attribution are preserved.
-See the [MIT license](LICENSE).

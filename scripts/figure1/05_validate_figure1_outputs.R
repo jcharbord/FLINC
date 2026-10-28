@@ -109,10 +109,7 @@ canonical_scripts <- file.path(
   scripts_dir,
   c(
     "analysis/01_preprocess_integrate_and_reduce_spatial_data.R",
-    "source_history/rebuild_clustering_source_from_historical_analysis.R",
     "analysis/02_cluster_annotate_and_characterize_spatial_domains.R",
-    "source_history/clustering_annotation_characterization_source.Rmd",
-    "source_history/clustering_annotation_characterization_extracted.R",
     "figure1/01_plot_spatial_clusters_on_histology.R",
     "figure1/02_plot_top_cluster_markers_spatially.R",
     "figure1/03_plot_final_annotated_umap.R",
@@ -130,8 +127,7 @@ documentation <- c(
   file.path(repro_dir, "FIGURE1_SOURCE_WORKFLOW.md"),
   file.path(repro_dir, "FIGURE1_SHA256.txt"),
   file.path(scripts_dir, "analysis", "README.md"),
-  file.path(scripts_dir, "figure1", "README.md"),
-  file.path(scripts_dir, "source_history", "README.md")
+  file.path(scripts_dir, "figure1", "README.md")
 )
 
 code_checksums <- rbind(

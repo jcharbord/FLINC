@@ -46,6 +46,7 @@ The final annotated spatial domains are:
 
 The second script requires the integrated object produced by the first script.
 
-Historical preparation files are retained separately in:
-
-`../source_history/`
+All clustering, annotation and characterization code is included directly in
+`02_cluster_annotate_and_characterize_spatial_domains.R`. It runs as a plain R
+script without notebook extraction or rendering. The script records its own
+checksum together with the input-object checksum and software environment.
