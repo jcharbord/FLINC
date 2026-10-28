@@ -1,0 +1,31 @@
+module	biological_name	database	n_query_genes	n_raw_terms	n_adjusted_p_le_0.05	n_terms_plotted	plot_file	queried_at_utc
+SM_1	Fibro-immune ECM remodeling	GO_Biological_Process_2023	1652	4035	803	10	plots/SM_1/GO_Biological_Process_2023.pdf	2026-08-12 07:52:16 UTC
+SM_1	Fibro-immune ECM remodeling	GO_Molecular_Function_2023	1652	758	68	10	plots/SM_1/GO_Molecular_Function_2023.pdf	2026-08-12 07:52:16 UTC
+SM_1	Fibro-immune ECM remodeling	GO_Cellular_Component_2023	1652	337	96	10	plots/SM_1/GO_Cellular_Component_2023.pdf	2026-08-12 07:52:16 UTC
+SM_1	Fibro-immune ECM remodeling	KEGG_2019_Human	1652	279	139	10	plots/SM_1/KEGG_2019_Human.pdf	2026-08-12 07:52:16 UTC
+SM_1	Fibro-immune ECM remodeling	WikiPathways_2024_Human	1652	678	203	10	plots/SM_1/WikiPathways_2024_Human.pdf	2026-08-12 07:52:16 UTC
+SM_2	Interferon antiviral	GO_Biological_Process_2023	50	452	72	10	plots/SM_2/GO_Biological_Process_2023.pdf	2026-08-12 07:52:19 UTC
+SM_2	Interferon antiviral	GO_Molecular_Function_2023	50	93	3	3	plots/SM_2/GO_Molecular_Function_2023.pdf	2026-08-12 07:52:19 UTC
+SM_2	Interferon antiviral	GO_Cellular_Component_2023	50	68	0	0	NA	2026-08-12 07:52:19 UTC
+SM_2	Interferon antiviral	KEGG_2019_Human	50	52	13	10	plots/SM_2/KEGG_2019_Human.pdf	2026-08-12 07:52:19 UTC
+SM_2	Interferon antiviral	WikiPathways_2024_Human	50	119	23	10	plots/SM_2/WikiPathways_2024_Human.pdf	2026-08-12 07:52:19 UTC
+SM_3	Cholesterol metabolism and lipogenesis	GO_Biological_Process_2023	69	484	66	10	plots/SM_3/GO_Biological_Process_2023.pdf	2026-08-12 07:52:23 UTC
+SM_3	Cholesterol metabolism and lipogenesis	GO_Molecular_Function_2023	69	119	15	10	plots/SM_3/GO_Molecular_Function_2023.pdf	2026-08-12 07:52:23 UTC
+SM_3	Cholesterol metabolism and lipogenesis	GO_Cellular_Component_2023	69	54	5	5	plots/SM_3/GO_Cellular_Component_2023.pdf	2026-08-12 07:52:23 UTC
+SM_3	Cholesterol metabolism and lipogenesis	KEGG_2019_Human	69	66	13	10	plots/SM_3/KEGG_2019_Human.pdf	2026-08-12 07:52:23 UTC
+SM_3	Cholesterol metabolism and lipogenesis	WikiPathways_2024_Human	69	139	44	10	plots/SM_3/WikiPathways_2024_Human.pdf	2026-08-12 07:52:23 UTC
+SM_4	Hepatocyte homeostatic function	GO_Biological_Process_2023	90	719	24	10	plots/SM_4/GO_Biological_Process_2023.pdf	2026-08-12 07:52:27 UTC
+SM_4	Hepatocyte homeostatic function	GO_Molecular_Function_2023	90	168	12	10	plots/SM_4/GO_Molecular_Function_2023.pdf	2026-08-12 07:52:27 UTC
+SM_4	Hepatocyte homeostatic function	GO_Cellular_Component_2023	90	93	3	3	plots/SM_4/GO_Cellular_Component_2023.pdf	2026-08-12 07:52:27 UTC
+SM_4	Hepatocyte homeostatic function	KEGG_2019_Human	90	127	5	5	plots/SM_4/KEGG_2019_Human.pdf	2026-08-12 07:52:27 UTC
+SM_4	Hepatocyte homeostatic function	WikiPathways_2024_Human	90	212	5	5	plots/SM_4/WikiPathways_2024_Human.pdf	2026-08-12 07:52:27 UTC
+SM_5	Stress and protein homeostasis	GO_Biological_Process_2023	53	699	7	7	plots/SM_5/GO_Biological_Process_2023.pdf	2026-08-12 07:52:30 UTC
+SM_5	Stress and protein homeostasis	GO_Molecular_Function_2023	53	116	0	0	NA	2026-08-12 07:52:30 UTC
+SM_5	Stress and protein homeostasis	GO_Cellular_Component_2023	53	104	2	2	plots/SM_5/GO_Cellular_Component_2023.pdf	2026-08-12 07:52:30 UTC
+SM_5	Stress and protein homeostasis	KEGG_2019_Human	53	117	2	2	plots/SM_5/KEGG_2019_Human.pdf	2026-08-12 07:52:30 UTC
+SM_5	Stress and protein homeostasis	WikiPathways_2024_Human	53	197	9	9	plots/SM_5/WikiPathways_2024_Human.pdf	2026-08-12 07:52:30 UTC
+SM_6	Hepatic plasma	GO_Biological_Process_2023	292	1437	263	10	plots/SM_6/GO_Biological_Process_2023.pdf	2026-08-12 07:52:34 UTC
+SM_6	Hepatic plasma	GO_Molecular_Function_2023	292	290	69	10	plots/SM_6/GO_Molecular_Function_2023.pdf	2026-08-12 07:52:34 UTC
+SM_6	Hepatic plasma	GO_Cellular_Component_2023	292	130	30	10	plots/SM_6/GO_Cellular_Component_2023.pdf	2026-08-12 07:52:34 UTC
+SM_6	Hepatic plasma	KEGG_2019_Human	292	194	53	10	plots/SM_6/KEGG_2019_Human.pdf	2026-08-12 07:52:34 UTC
+SM_6	Hepatic plasma	WikiPathways_2024_Human	292	349	135	10	plots/SM_6/WikiPathways_2024_Human.pdf	2026-08-12 07:52:34 UTC

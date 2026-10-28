@@ -1,0 +1,22 @@
+"cluster","celltype","fraction"
+"C0 Portal tracts","PortalHep",0.298495810872003
+"C0 Portal tracts","CentralHep",0.163719192676184
+"C0 Portal tracts","Immune",0.142460061289401
+"C1 Periportal hepatocytes","PortalHep",0.349511601519294
+"C1 Periportal hepatocytes","CentralHep",0.206909652199925
+"C1 Periportal hepatocytes","InterHep",0.165085997884193
+"C2 Centrilobular hepatocytes","PortalHep",0.309517443425824
+"C2 Centrilobular hepatocytes","CentralHep",0.237405407437604
+"C2 Centrilobular hepatocytes","InterHep",0.141447245664572
+"C3 Immune cells","Immune",0.274222901707831
+"C3 Immune cells","PortalHep",0.251503832518384
+"C3 Immune cells","CentralHep",0.162520933582663
+"C4 Myofibroblasts","Immune",0.31656877025557
+"C4 Myofibroblasts","Stellate",0.173665504195858
+"C4 Myofibroblasts","PortalHep",0.137306665749069
+"C5 Cholangiocytes","Immune",0.243649461935284
+"C5 Cholangiocytes","PortalHep",0.200749670293538
+"C5 Cholangiocytes","Stellate",0.130376353835396
+"C6 Matrix-rich fibroblast","PortalHep",0.24977878668688
+"C6 Matrix-rich fibroblast","Immune",0.213395795369706
+"C6 Matrix-rich fibroblast","CentralHep",0.153879657973839

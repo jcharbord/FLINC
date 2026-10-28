@@ -55,7 +55,7 @@ a fresh checkout alone is not sufficient to run it.
 The following are retained in Git because they are small, explicit inputs to the public workflow:
 
 ```text
-resources/figure4/
+resources/figure4/reference_inputs/
   uniprot_human_secreted_only_KW-0964_reviewed.tsv
   reference_secreted_counts_by_module.csv
   reference_top30_secreted_factors_by_module.csv
@@ -84,8 +84,8 @@ The exact command-line arguments and required files for each script are listed i
 
 ## Published numerical source tables
 
-Selected completed-run exports are available in [source_data/figure4/](source_data/figure4/README.md).
-The [source-data manifest](source_data/manifest.tsv) identifies the original
-run directories and checks performed. This is a partial source-data release;
-see the linked guide for included and missing outputs. It does not replace the
-external inputs required to run the analysis.
+[resources/figure4/](resources/figure4/README.md) contains the
+selected completed-run tables and available reference inputs for this figure.
+The [resource manifest](resources/manifest.tsv) records exact original paths,
+checksums and verification details. The figure resource guide distinguishes
+final tests, descriptive summaries and external inputs.

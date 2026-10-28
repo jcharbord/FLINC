@@ -1,0 +1,15 @@
+pathway	expected_top_targets	observed_targets	zero_variance_targets	scored_targets
+Androgen	100	96	0	96
+EGFR	100	89	0	89
+Estrogen	100	99	0	99
+Hypoxia	100	92	0	92
+JAK-STAT	100	96	0	96
+MAPK	100	95	0	95
+NFkB	100	96	0	96
+PI3K	100	75	0	75
+TGFb	100	92	0	92
+TNFa	100	91	0	91
+Trail	100	59	0	59
+VEGF	100	70	0	70
+WNT	100	94	0	94
+p53	100	83	0	83

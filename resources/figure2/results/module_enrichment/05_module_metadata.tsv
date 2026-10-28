@@ -1,0 +1,7 @@
+module	biological_name	module_color	expected_n_genes	displayed_hub_n	top70_n
+SM_1	Fibro-immune ECM remodeling	#CAB2D6	1652	50	1157
+SM_2	Interferon antiviral	#6A3D9A	50	30	35
+SM_3	Cholesterol metabolism and lipogenesis	#E69F00	69	30	49
+SM_4	Hepatocyte homeostatic function	#7EC0EE	90	30	63
+SM_5	Stress and protein homeostasis	#993F00	53	30	38
+SM_6	Hepatic plasma	#023FA5	292	30	205

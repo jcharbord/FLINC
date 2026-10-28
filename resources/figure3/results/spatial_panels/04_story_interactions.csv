@@ -1,0 +1,4 @@
+"edge_order","source","target","ligand","receptor","note","pair","direction","score_column"
+1,"Cholangiocyte","Stellate","NPNT","ITGA8","portal_fibrotic_niche","NPNT_ITGA8","Cholangiocyte_to_Stellate","LR__Cholangiocyte_to_Stellate__NPNT_ITGA8_log"
+2,"Cholangiocyte","InfMac","MMP7","CD151","remodeling_broadcast","MMP7_CD151","Cholangiocyte_to_InfMac","LR__Cholangiocyte_to_InfMac__MMP7_CD151_log"
+3,"Stellate","PortalEndo","CCL2","ACKR1","trafficking","CCL2_ACKR1","Stellate_to_PortalEndo","LR__Stellate_to_PortalEndo__CCL2_ACKR1_log"

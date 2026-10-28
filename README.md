@@ -274,23 +274,24 @@ is now Figure 2 step `05_bis`.
 See `FIGURE4_SOURCE_WORKFLOW.md` and `scripts/figure4/README.md` for the
 complete source map, methods, required versioned resources and execution order.
 
-## Reference resources and numerical source data
+## Figure resources and numerical source data
 
-Frozen reference inputs and curated gene annotations are organized under
-[`resources/`](resources/README.md), with one folder per figure represented.
-Selected numerical results are available under [`source_data/`](source_data/README.md):
+Reference inputs and numerical outputs are organized together by figure under
+[`resources/`](resources/README.md). Each figure guide explains its
+`reference_inputs/` (where present) and `results/` folders.
 
-| Figure | Available numerical exports |
+| Figure | Available source tables |
 | --- | --- |
-| [Figure 2](source_data/figure2/README.md) | Final donor-level DME and QC, module assignments, module–cell-type correlations, kME-selected hub lists and PCSK7/PNPLA3 neighbourhood tables. |
-| [Figure 4](source_data/figure4/README.md) | Donor-level expression, all 60 SM_1/SM_6 Spearman tests with BH30 correction, selected-factor statistics and exact gene lists. |
+| [Figure 1](resources/figure1/README.md) | Marker genes, GO enrichment, deconvolution, cluster counts and final donor-level cluster-proportion tests. |
+| [Figure 2](resources/figure2/README.md) | Module assignments and kME, final donor-level DME, cell-type correlations, hub/neighbour lists, module enrichment and donor-pseudobulk GSEA. |
+| [Figure 3](resources/figure3/README.md) | Retained LIANA interactions, stage-activity tests, heatmap/chord/dotplot inputs and spatial-panel selections. |
+| [Figure 4](resources/figure4/README.md) | PROGENy, DoRothEA, RFX5, secreted-factor rankings, donor expression, final BH30 tests and spatial-cluster summaries. |
 
-The [source-data manifest](source_data/manifest.tsv) records original run paths,
-row counts, checksums and verification notes. These tables can be inspected
-without rerunning the full pipeline. Figure 1 and Figure 3 numerical exports,
-Figure 2 enrichment/GSEA results, Figure 4 regulatory/spatial results and
-manuscript figure PDFs are not yet included. External objects and validation
-records remain necessary for the full reference analysis.
+The [resource manifest](resources/manifest.tsv) records original run paths,
+row counts, checksums and verification notes. Tables can be inspected without
+rerunning the full pipeline. Original expression/network objects, some plotting
+inputs and assembled manuscript figures remain external; the resource guides
+state the specific limits. No biological analysis was rerun to publish these tables.
 
 ## Figure-specific documentation and integrity manifests
 
@@ -316,7 +317,7 @@ These figure manifests cover documentation, scripts and static reference files.
 The selected numerical source tables have a separate manifest:
 
 ```bash
-shasum -a 256 -c source_data/SHA256SUMS
+shasum -a 256 -c resources/SHA256SUMS
 ```
 
 Complete generated outputs and execution records retain their checksums in the
@@ -347,7 +348,7 @@ Software-version and session-information records are included under
 `reproducibility_logs/`. The complete historical run records remain in the
 historical archive. Selected donor summaries, the donor-stage mapping used for
 secreted-factor inference, and numerical results are now included in
-`source_data/`. Complete generated result folders and additional clinical
+`resources/`. Complete generated result folders and additional clinical
 metadata are not included.
 
 The scripts generate local execution records, including input/output checksums,

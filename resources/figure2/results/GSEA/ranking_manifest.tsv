@@ -1,0 +1,5 @@
+comparison	expression_filtered_genes	ranked_unique_symbols	ensembl_identifier_fraction	ranking_statistic	DEG_significance_filter_applied
+F1_vs_F0	14028	14026	0	limma moderated t	FALSE
+F2_vs_F0	14028	14026	0	limma moderated t	FALSE
+F3_vs_F0	14028	14026	0	limma moderated t	FALSE
+F4_vs_F0	14028	14026	0	limma moderated t	FALSE

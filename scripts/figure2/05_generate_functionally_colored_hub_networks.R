@@ -38,7 +38,7 @@ network_object_file <- env_or(
 annotation_file <- env_or(
   "FIG2_FUNCTIONAL_ANNOTATION_INPUT",
   file.path(
-    repro_root, "resources", "figure2",
+    repro_root, "resources", "figure2", "reference_inputs",
     "functional_subcategories.tsv"
   )
 )

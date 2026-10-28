@@ -120,3 +120,11 @@ Only software-version and session-information records are bundled under
 `reproducibility_logs/`. Other run records and generated outputs described above
 are local analysis artifacts and are not included in this checkout. See the
 [root README](README.md) for migration scope and required external inputs.
+
+## Published numerical source tables
+
+[resources/figure3/](resources/figure3/README.md) contains the
+selected completed-run tables and available reference inputs for this figure.
+The [resource manifest](resources/manifest.tsv) records exact original paths,
+checksums and verification details. The figure resource guide distinguishes
+final tests, descriptive summaries and external inputs.

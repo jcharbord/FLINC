@@ -83,3 +83,18 @@ These include:
 
 These analyses are not duplicated here because they belong to the main
 biological analysis.
+
+## Published numerical source tables
+
+[resources/figure1/](../../resources/figure1/README.md) contains the
+selected completed-run tables and available reference inputs for this figure.
+The [resource manifest](../../resources/manifest.tsv) records exact original paths,
+checksums and verification details. The figure resource guide distinguishes
+final tests, descriptive summaries and external inputs.
+
+The final Figure 1G C4 plot uses Healthy versus F1–F4, with Holm correction across
+four tests and only significant comparisons annotated. Other cluster plots
+retain selected nominal comparisons. The separate all-pairwise table uses
+Holm correction across ten pairs within each cluster. The final plotter is
+`scripts/figure1/06_plot_final_cluster_proportions.R`; it reads the published
+per-cluster donor proportions and does not rerun clustering.

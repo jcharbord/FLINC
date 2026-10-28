@@ -1,0 +1,16 @@
+"cluster","celltype","cell_frac"
+"C3 Immune cells","NonInfMac",0.294929949328321
+"C3 Immune cells","NKTcell",0.256785575901987
+"C3 Immune cells","InfMac",0.166070036271911
+"C3 Immune cells","Bcells",0.0695055127636923
+"C3 Immune cells","Stellate",0.212708925734089
+"C4 Myofibroblasts","NonInfMac",0.228035343851473
+"C4 Myofibroblasts","NKTcell",0.226283102197989
+"C4 Myofibroblasts","InfMac",0.139093767536462
+"C4 Myofibroblasts","Bcells",0.0523377609743216
+"C4 Myofibroblasts","Stellate",0.354250025439754
+"C6 Matrix-rich fibroblast","NonInfMac",0.246691350660476
+"C6 Matrix-rich fibroblast","NKTcell",0.202676985984117
+"C6 Matrix-rich fibroblast","InfMac",0.136264411755272
+"C6 Matrix-rich fibroblast","Bcells",0.0641898883296349
+"C6 Matrix-rich fibroblast","Stellate",0.3501773632705

@@ -1,0 +1,4 @@
+"edge_order","source","target","ligand","receptor","pair","score_column","q01","q99","finite_spots"
+1,"Cholangiocyte","Stellate","NPNT","ITGA8","NPNT_ITGA8","LR__Cholangiocyte_to_Stellate__NPNT_ITGA8_log",0,1.56069258152837e-09,26056
+2,"Cholangiocyte","InfMac","MMP7","CD151","MMP7_CD151","LR__Cholangiocyte_to_InfMac__MMP7_CD151_log",0,3.02077740741239,26056
+3,"Stellate","PortalEndo","CCL2","ACKR1","CCL2_ACKR1","LR__Stellate_to_PortalEndo__CCL2_ACKR1_log",0,0.000991789688945745,26056

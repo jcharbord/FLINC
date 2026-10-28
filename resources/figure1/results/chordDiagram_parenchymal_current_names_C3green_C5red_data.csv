@@ -1,0 +1,21 @@
+"cluster","celltype","cell_frac"
+"C0 Portal tracts","PortalHep",0.432215593220403
+"C0 Portal tracts","CentralHep",0.237061913121607
+"C0 Portal tracts","InterHep",0.198989311363618
+"C0 Portal tracts","Cholangiocyte",0.0720441851924982
+"C0 Portal tracts","PortalEndo",0.0596889971018735
+"C1 Periportal hepatocytes","PortalHep",0.461603681958395
+"C1 Periportal hepatocytes","CentralHep",0.273267773867999
+"C1 Periportal hepatocytes","InterHep",0.218030829683096
+"C1 Periportal hepatocytes","Cholangiocyte",0.0188206669086593
+"C1 Periportal hepatocytes","PortalEndo",0.0282770475818509
+"C2 Centrilobular hepatocytes","PortalHep",0.428425429740135
+"C2 Centrilobular hepatocytes","CentralHep",0.328609956771183
+"C2 Centrilobular hepatocytes","InterHep",0.195787340250261
+"C2 Centrilobular hepatocytes","Cholangiocyte",0.017860494617246
+"C2 Centrilobular hepatocytes","PortalEndo",0.0293167786211752
+"C5 Cholangiocytes","PortalHep",0.367737868819915
+"C5 Cholangiocytes","CentralHep",0.201945326046511
+"C5 Cholangiocytes","InterHep",0.157641200469316
+"C5 Cholangiocytes","Cholangiocyte",0.164409260725557
+"C5 Cholangiocytes","PortalEndo",0.108266343938701

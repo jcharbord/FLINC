@@ -1,0 +1,8 @@
+"raw_approach1_label","final_cluster","annotation","final_cluster_named"
+"C0","C1","Periportal hepatocytes","C1 Periportal hepatocytes"
+"C1","C2","Centrilobular hepatocytes","C2 Centrilobular hepatocytes"
+"C2_S0","C0","Portal tracts","C0 Portal tracts"
+"C2_S1","C6","Matrix-rich fibroblast","C6 Matrix-rich fibroblast"
+"C2_S2_K0","C5","Cholangiocytes","C5 Cholangiocytes"
+"C2_S2_K1","C4","Myofibroblasts","C4 Myofibroblasts"
+"C2_S3","C3","Immune cells","C3 Immune cells"

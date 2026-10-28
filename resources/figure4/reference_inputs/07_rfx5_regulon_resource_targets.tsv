@@ -1,0 +1,17 @@
+gene	confidence	mor	mor_sign	present_in_input	total_count	observed_nonzero
+CD74	A	1	activates	TRUE	305131	TRUE
+COL1A2	A	-1	represses	TRUE	60290	TRUE
+HLA-DMA	A	1	activates	TRUE	29161	TRUE
+HLA-DMB	A	1	activates	TRUE	20410	TRUE
+HLA-DOA	A	1	activates	TRUE	6411	TRUE
+HLA-DOB	A	1	activates	TRUE	828	TRUE
+HLA-DPA1	A	1	activates	TRUE	94638	TRUE
+HLA-DPB1	A	1	activates	TRUE	94652	TRUE
+HLA-DQA1	A	1	activates	TRUE	16039	TRUE
+HLA-DQA2	A	1	activates	TRUE	79	TRUE
+HLA-DQB1	A	1	activates	TRUE	770	TRUE
+HLA-DRA	A	1	activates	TRUE	158332	TRUE
+HLA-DRB1	A	1	activates	TRUE	33984	TRUE
+HLA-DRB3	A	1	activates	FALSE	0	FALSE
+HLA-DRB4	A	1	activates	FALSE	0	FALSE
+HLA-DRB5	A	1	activates	TRUE	20429	TRUE

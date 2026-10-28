@@ -1,0 +1,5 @@
+"group1","group2","p_raw","p_adj","significant","p_label","correction","cluster_label"
+"F0","F1",0.297106983547093,0.297106983547093,FALSE,"p=0.3 (ns)","Holm correction across 4 displayed C4 comparisons","C4_Myofibroblasts"
+"F0","F2",0.0201367515503463,0.060410254651039,FALSE,"p=0.06 (ns)","Holm correction across 4 displayed C4 comparisons","C4_Myofibroblasts"
+"F0","F3",0.0201367515503463,0.060410254651039,FALSE,"p=0.06 (ns)","Holm correction across 4 displayed C4 comparisons","C4_Myofibroblasts"
+"F0","F4",0.0104056198688736,0.0416224794754944,TRUE,"p=0.042 (*)","Holm correction across 4 displayed C4 comparisons","C4_Myofibroblasts"

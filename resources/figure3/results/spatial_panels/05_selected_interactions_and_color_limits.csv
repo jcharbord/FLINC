@@ -1,0 +1,4 @@
+"edge_order","source","target","ligand","receptor","pair","direction","liana_aggregate_rank","aggregate_rank_threshold","color_q01","color_q99","color_limits_calculated_across_donors","finite_spots"
+1,"Cholangiocyte","Stellate","NPNT","ITGA8","NPNT_ITGA8","Cholangiocyte_to_Stellate",7.59661069840347e-06,0.01,0,1.56069258152837e-09,24,26056
+2,"Cholangiocyte","InfMac","MMP7","CD151","MMP7_CD151","Cholangiocyte_to_InfMac",1.1479120956405e-05,0.01,0,3.02077740741239,24,26056
+3,"Stellate","PortalEndo","CCL2","ACKR1","CCL2_ACKR1","Stellate_to_PortalEndo",0.000101850349325487,0.01,0,0.000991789688945745,24,26056

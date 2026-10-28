@@ -32,7 +32,7 @@ After installing the public workflow, run:
 ```bash
 Rscript scripts/figure4/09_validate_figure4_outputs.R \
   --script-dir scripts/figure4 \
-  --resource-dir resources/figure4 \
+  --resource-dir resources/figure4/reference_inputs \
   --manifest FIGURE4_SHA256.txt \
   --record-dir reproducibility_records/Fig4
 ```
@@ -106,8 +106,8 @@ or reconstruct WGCNA modules.
 
 ## Published numerical source tables
 
-Selected completed-run exports are available in [source_data/figure4/](../../source_data/figure4/README.md).
-The [source-data manifest](../../source_data/manifest.tsv) identifies the original
-run directories and checks performed. This is a partial source-data release;
-see the linked guide for included and missing outputs. It does not replace the
-external inputs required to run the analysis.
+[resources/figure4/](../../resources/figure4/README.md) contains the
+selected completed-run tables and available reference inputs for this figure.
+The [resource manifest](../../resources/manifest.tsv) records exact original paths,
+checksums and verification details. The figure resource guide distinguishes
+final tests, descriptive summaries and external inputs.

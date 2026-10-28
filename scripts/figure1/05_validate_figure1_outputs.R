@@ -113,7 +113,8 @@ canonical_scripts <- file.path(
     "figure1/01_plot_spatial_clusters_on_histology.R",
     "figure1/02_plot_top_cluster_markers_spatially.R",
     "figure1/03_plot_final_annotated_umap.R",
-    "figure1/05_validate_figure1_outputs.R"
+    "figure1/05_validate_figure1_outputs.R",
+    "figure1/06_plot_final_cluster_proportions.R"
   )
 )
 
