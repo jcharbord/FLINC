@@ -17,9 +17,6 @@ downstream analyses used for Figures 1–4.
 
 ![FLINC spatial transcriptomics workflow overview](FLINC_workflow_overview.png)
 
-The original diagram is shown above. The PCSK7/PNPLA3 TOM ego-network analysis
-has since moved from Figure 4 to Figure 2, as documented below.
-
 ## Analysis overview
 
 The principal workflow consists of two sequential analysis stages:
