@@ -274,6 +274,24 @@ is now Figure 2 step `05_bis`.
 See `FIGURE4_SOURCE_WORKFLOW.md` and `scripts/figure4/README.md` for the
 complete source map, methods, required versioned resources and execution order.
 
+## Reference resources and numerical source data
+
+Frozen reference inputs and curated gene annotations are organized under
+[`resources/`](resources/README.md), with one folder per figure represented.
+Selected numerical results are available under [`source_data/`](source_data/README.md):
+
+| Figure | Available numerical exports |
+| --- | --- |
+| [Figure 2](source_data/figure2/README.md) | Final donor-level DME and QC, module assignments, module–cell-type correlations, kME-selected hub lists and PCSK7/PNPLA3 neighbourhood tables. |
+| [Figure 4](source_data/figure4/README.md) | Donor-level expression, all 60 SM_1/SM_6 Spearman tests with BH30 correction, selected-factor statistics and exact gene lists. |
+
+The [source-data manifest](source_data/manifest.tsv) records original run paths,
+row counts, checksums and verification notes. These tables can be inspected
+without rerunning the full pipeline. Figure 1 and Figure 3 numerical exports,
+Figure 2 enrichment/GSEA results, Figure 4 regulatory/spatial results and
+manuscript figure PDFs are not yet included. External objects and validation
+records remain necessary for the full reference analysis.
+
 ## Figure-specific documentation and integrity manifests
 
 Each figure has the same reader-facing documentation pattern:
@@ -294,10 +312,15 @@ shasum -a 256 -c FIGURE3_SHA256.txt
 shasum -a 256 -c FIGURE4_SHA256.txt
 ```
 
-These public manifests cover figure-specific documentation, scripts and static
-reference files. Generated outputs and execution records have their own
-checksums in the local analysis folders. Only software-environment records are
-bundled in this repository.
+These figure manifests cover documentation, scripts and static reference files.
+The selected numerical source tables have a separate manifest:
+
+```bash
+shasum -a 256 -c source_data/SHA256SUMS
+```
+
+Complete generated outputs and execution records retain their checksums in the
+local analysis folders.
 
 ## Analysis objects and outputs
 
@@ -322,8 +345,10 @@ Important intermediate objects include:
 
 Software-version and session-information records are included under
 `reproducibility_logs/`. The complete historical run records remain in the
-private archive. Donor metadata, sample-level run tables and generated result
-folders were not copied into this code repository.
+historical archive. Selected donor summaries, the donor-stage mapping used for
+secreted-factor inference, and numerical results are now included in
+`source_data/`. Complete generated result folders and additional clinical
+metadata are not included.
 
 The scripts generate local execution records, including input/output checksums,
 parameters and session information. References to those output locations in the

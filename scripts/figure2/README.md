@@ -116,19 +116,19 @@ Main operations:
 - selects 50 hubs for `SM_1` and 30 hubs for each of `SM_2` through `SM_6`
 - retrieves hub-to-hub topological overlap values
 - assigns the accepted module-specific functional categories from
-  `reference/functional_subcategories.tsv`
+  `resources/figure2/functional_subcategories.tsv`
 - exports individual and combined PDF/PNG network figures
 - exports the annotated hub table, category legend and category counts
 
-The reference table is part of the plotting specification and must remain with
-the script.
+The reference table is part of the plotting specification and is versioned in
+`resources/figure2/`; paths in this guide are relative to the repository root.
 
 ### 5 bis. `05_bis_build_ego_networks.R`
 
 Sources:
 
 - `05_bis_build_ego_networks.R`
-- `reference/ego_network_functional_context_annotations.tsv`
+- `resources/figure2/ego_network_functional_context_annotations.tsv`
 
 This analysis uses the regenerated Figure 2 network and TOM workspace. Since
 `GetTOM()` returns TOM dissimilarity, edge weights and rankings use
@@ -284,7 +284,7 @@ variable overrides them.
 | Prepared WGCNA object | `objects/Fig2_WGCNA/01_wgcna_input_prepared.rds` | network construction |
 | Completed network object | `objects/Fig2_WGCNA/02_wgcna_network_modules.rds` | DME, hub networks, hME plots and module-gene UMAP |
 | Module assignment and kME table | `results/Fig2_WGCNA/02_network/02_module_assignments_and_kME.tsv` | enrichment |
-| Functional hub categories | `scripts/figure2/reference/functional_subcategories.tsv` | colored hub networks |
+| Functional hub categories | `resources/figure2/functional_subcategories.tsv` | colored hub networks |
 | Deconvolution fractions | network-object metadata or the object specified by `FIG2_DECONVOLUTION_OBJECT_INPUT` | hME-cell-type associations |
 
 The deconvolution calculation is upstream of this workflow. Figure 2 imports
@@ -326,7 +326,7 @@ Rscript --vanilla scripts/figure2/05_bis_build_ego_networks.R \
   --network objects/Fig2_WGCNA/02_wgcna_network_modules.rds \
   --tom objects/Fig2_WGCNA/02_network_workspace/TOM/test_TOM.rda \
   --module-table results/Fig2_WGCNA/02_network/02_module_assignments_and_kME.tsv \
-  --annotation scripts/figure2/reference/ego_network_functional_context_annotations.tsv \
+  --annotation resources/figure2/ego_network_functional_context_annotations.tsv \
   --output-dir results/Fig2_WGCNA/05_bis_ego_networks \
   --log-dir reproducibility_logs/Fig2_WGCNA/05_bis_ego_networks
 Rscript --vanilla scripts/figure2/06_plot_harmonized_module_eigengenes_and_celltype_associations.R
@@ -367,3 +367,11 @@ Only software-version and session-information records are bundled under
 `reproducibility_logs/`. Other run records and generated outputs described above
 are local analysis artifacts and are not included in this checkout. See the
 [root README](../../README.md) for migration scope and required external inputs.
+
+## Published numerical source tables
+
+Selected completed-run exports are available in [source_data/figure2/](../../source_data/figure2/README.md).
+The [source-data manifest](../../source_data/manifest.tsv) identifies the original
+run directories and checks performed. This is a partial source-data release;
+see the linked guide for included and missing outputs. It does not replace the
+external inputs required to run the analysis.

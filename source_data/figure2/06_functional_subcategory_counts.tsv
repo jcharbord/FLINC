@@ -1,0 +1,37 @@
+module	functional_subcategory	n_genes
+SM_6	Acute-phase response	4
+SM_4	Amino acid/urea	2
+SM_6	Antioxidant/heme binding	1
+SM_3	Cholesterol synthesis	5
+SM_6	Coagulation factors	5
+SM_6	Complement system	1
+SM_5	Cytoskeletal remodeling	2
+SM_1	Cytoskeleton	10
+SM_1	ECM	18
+SM_5	Early stress	3
+SM_3	Hepatocyte genes	7
+SM_2	IFN signaling	4
+SM_2	ISGs	8
+SM_2	ISGylation	2
+SM_1	Immune process	16
+SM_4	Lipid	5
+SM_3	Lipogenesis	4
+SM_5	Membrane signaling	5
+SM_6	Metabolism/transport	9
+SM_3	Mevalonate pathway	4
+SM_2	OAS	4
+SM_1	Oxidative stress	3
+SM_6	Plasma carriers	10
+SM_1	Regulation	2
+SM_4	Regulatory	9
+SM_2	Restriction	4
+SM_4	Secreted	6
+SM_1	Secreted lipid mediator	1
+SM_4	Small-molecule	5
+SM_3	Sterol processing	9
+SM_3	Sterol regulation	1
+SM_2	Stress	8
+SM_5	Transcription/metabolism	7
+SM_4	Transporters	3
+SM_5	Ubiquitin/proteostasis	6
+SM_5	Vesicle/lysosome	7

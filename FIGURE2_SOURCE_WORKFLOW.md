@@ -42,7 +42,7 @@ Sources:
 
 - `scripts/figure2/04_export_module_tables_and_run_enrichr.R`
 - `scripts/figure2/05_generate_functionally_colored_hub_networks.R`
-- `scripts/figure2/reference/functional_subcategories.tsv`
+- `resources/figure2/functional_subcategories.tsv`
 
 These sources export module and hub-gene tables, perform EnrichR analysis and
 generate the six functionally annotated hub-gene networks.
@@ -52,7 +52,7 @@ generate the six functionally annotated hub-gene networks.
 Sources:
 
 - `scripts/figure2/05_bis_build_ego_networks.R`
-- `scripts/figure2/reference/ego_network_functional_context_annotations.tsv`
+- `resources/figure2/ego_network_functional_context_annotations.tsv`
 
 This analysis uses the regenerated Figure 2 network and TOM workspace. Since
 `GetTOM()` returns TOM dissimilarity, edge weights and rankings use
@@ -134,3 +134,11 @@ Only software-version and session-information records are bundled under
 `reproducibility_logs/`. Other run records and generated outputs described above
 are local analysis artifacts and are not included in this checkout. See the
 [root README](README.md) for migration scope and required external inputs.
+
+## Published numerical source tables
+
+Selected completed-run exports are available in [source_data/figure2/](source_data/figure2/README.md).
+The [source-data manifest](source_data/manifest.tsv) identifies the original
+run directories and checks performed. This is a partial source-data release;
+see the linked guide for included and missing outputs. It does not replace the
+external inputs required to run the analysis.

@@ -32,7 +32,7 @@ After installing the public workflow, run:
 ```bash
 Rscript scripts/figure4/09_validate_figure4_outputs.R \
   --script-dir scripts/figure4 \
-  --resource-dir resources/Fig4_secreted_factor \
+  --resource-dir resources/figure4 \
   --manifest FIGURE4_SHA256.txt \
   --record-dir reproducibility_records/Fig4
 ```
@@ -103,3 +103,11 @@ folder containing PDF/PNG panels, donor expression, full 30-gene statistics,
 selected-gene statistics, the gene lists, concordance results, input checksums,
 `sessionInfo()` and a copy of the source script. It does not overwrite old figures
 or reconstruct WGCNA modules.
+
+## Published numerical source tables
+
+Selected completed-run exports are available in [source_data/figure4/](../../source_data/figure4/README.md).
+The [source-data manifest](../../source_data/manifest.tsv) identifies the original
+run directories and checks performed. This is a partial source-data release;
+see the linked guide for included and missing outputs. It does not replace the
+external inputs required to run the analysis.

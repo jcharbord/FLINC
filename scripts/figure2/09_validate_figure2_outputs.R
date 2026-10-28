@@ -274,8 +274,7 @@ documentation <- c(
   file.path(repro_root, "FIGURE2_SHA256.txt")
 )
 reference_files <- file.path(
-  scripts_dir,
-  "reference",
+  repro_root, "resources", "figure2",
   c("functional_subcategories.tsv", "ego_network_functional_context_annotations.tsv")
 )
 

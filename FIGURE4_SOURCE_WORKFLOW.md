@@ -55,7 +55,7 @@ a fresh checkout alone is not sufficient to run it.
 The following are retained in Git because they are small, explicit inputs to the public workflow:
 
 ```text
-resources/Fig4_secreted_factor/
+resources/figure4/
   uniprot_human_secreted_only_KW-0964_reviewed.tsv
   reference_secreted_counts_by_module.csv
   reference_top30_secreted_factors_by_module.csv
@@ -81,3 +81,11 @@ These files remain available in the protected analysis environment. The final sc
 5. Compare regenerated local figures/tables with the compact execution records before manuscript use.
 
 The exact command-line arguments and required files for each script are listed in [`scripts/figure4/README.md`](scripts/figure4/README.md).
+
+## Published numerical source tables
+
+Selected completed-run exports are available in [source_data/figure4/](source_data/figure4/README.md).
+The [source-data manifest](source_data/manifest.tsv) identifies the original
+run directories and checks performed. This is a partial source-data release;
+see the linked guide for included and missing outputs. It does not replace the
+external inputs required to run the analysis.

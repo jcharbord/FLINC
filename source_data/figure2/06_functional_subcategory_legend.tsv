@@ -1,0 +1,37 @@
+figure_panel	module	biological_name	category_order	functional_subcategory	category_color_hex
+C	SM_1	Fibro-immune ECM remodeling	1	ECM	#1432F3
+C	SM_1	Fibro-immune ECM remodeling	2	Cytoskeleton	#4FAC5B
+C	SM_1	Fibro-immune ECM remodeling	3	Immune process	#F4C243
+C	SM_1	Fibro-immune ECM remodeling	4	Oxidative stress	#FEFE55
+C	SM_1	Fibro-immune ECM remodeling	5	Secreted lipid mediator	#E93323
+C	SM_1	Fibro-immune ECM remodeling	6	Regulation	#69349B
+D	SM_2	Interferon antiviral	1	ISGs	#1432F3
+D	SM_2	Interferon antiviral	2	OAS	#4FAC5B
+D	SM_2	Interferon antiviral	3	Restriction	#F4C243
+D	SM_2	Interferon antiviral	4	ISGylation	#FEFE55
+D	SM_2	Interferon antiviral	5	IFN signaling	#E93323
+D	SM_2	Interferon antiviral	6	Stress	#69349B
+E	SM_3	Cholesterol metabolism and lipogenesis	1	Cholesterol synthesis	#1432F3
+E	SM_3	Cholesterol metabolism and lipogenesis	2	Sterol processing	#4FAC5B
+E	SM_3	Cholesterol metabolism and lipogenesis	3	Sterol regulation	#F4C243
+E	SM_3	Cholesterol metabolism and lipogenesis	4	Mevalonate pathway	#FEFE55
+E	SM_3	Cholesterol metabolism and lipogenesis	5	Lipogenesis	#E93323
+E	SM_3	Cholesterol metabolism and lipogenesis	6	Hepatocyte genes	#69349B
+F	SM_4	Hepatocyte homeostatic function	1	Secreted	#1432F3
+F	SM_4	Hepatocyte homeostatic function	2	Transporters	#4FAC5B
+F	SM_4	Hepatocyte homeostatic function	3	Lipid	#F4C243
+F	SM_4	Hepatocyte homeostatic function	4	Amino acid/urea	#FEFE55
+F	SM_4	Hepatocyte homeostatic function	5	Small-molecule	#E93323
+F	SM_4	Hepatocyte homeostatic function	6	Regulatory	#69349B
+G	SM_5	Stress and protein homeostasis	1	Early stress	#1432F3
+G	SM_5	Stress and protein homeostasis	2	Membrane signaling	#4FAC5B
+G	SM_5	Stress and protein homeostasis	3	Vesicle/lysosome	#F4C243
+G	SM_5	Stress and protein homeostasis	4	Ubiquitin/proteostasis	#FEFE55
+G	SM_5	Stress and protein homeostasis	5	Cytoskeletal remodeling	#E93323
+G	SM_5	Stress and protein homeostasis	6	Transcription/metabolism	#69349B
+H	SM_6	Hepatic plasma	1	Coagulation factors	#1432F3
+H	SM_6	Hepatic plasma	2	Complement system	#4FAC5B
+H	SM_6	Hepatic plasma	3	Acute-phase response	#F4C243
+H	SM_6	Hepatic plasma	4	Plasma carriers	#FEFE55
+H	SM_6	Hepatic plasma	5	Antioxidant/heme binding	#E93323
+H	SM_6	Hepatic plasma	6	Metabolism/transport	#69349B
