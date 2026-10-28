@@ -15,7 +15,7 @@ The validated workflow links the 24-sample cohort and Space Ranger-derived
 count matrices to shared preprocessing in R, STRIDE deconvolution, and the
 downstream analyses used for Figures 1–4.
 
-![FLINC spatial transcriptomics workflow overview](workflow/FLINC_workflow_overview.png)
+![FLINC spatial transcriptomics workflow overview](FLINC_workflow_overview.png)
 
 The original diagram is shown above. The PCSK7/PNPLA3 TOM ego-network analysis
 has since moved from Figure 4 to Figure 2, as documented below.
