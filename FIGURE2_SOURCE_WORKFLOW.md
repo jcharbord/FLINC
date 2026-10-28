@@ -47,6 +47,26 @@ Sources:
 These sources export module and hub-gene tables, perform EnrichR analysis and
 generate the six functionally annotated hub-gene networks.
 
+## PCSK7 and PNPLA3 same-module ego networks
+
+Sources:
+
+- `scripts/figure2/05_bis_build_ego_networks.R`
+- `scripts/figure2/reference/ego_network_functional_context_annotations.tsv`
+
+This analysis uses the regenerated Figure 2 network and TOM workspace. Since
+`GetTOM()` returns TOM dissimilarity, edge weights and rankings use
+`TOM_similarity <- 1 - GetTOM_output`. Each index gene retains the genuine top
+20 neighbours ranked by descending TOM similarity within its own module
+(PCSK7: SM_1; PNPLA3: SM_3). No functional gene is force-included.
+
+The annotation table assigns biological-context categories to selected true
+neighbours; unannotated genes are labelled `Other`. It does not alter rankings.
+This analysis was moved from Figure 4 step 06 to Figure 2 step `05_bis`.
+Calculations and plotting settings are unchanged; new figure filenames use
+`Fig2_` and gene names. Legacy `11_` table/log prefixes and F/G export identifiers
+are retained for traceability and do not assign current manuscript panels.
+
 ## Harmonized module-eigengene visualizations
 
 Sources:

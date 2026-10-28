@@ -6,7 +6,8 @@ donor-level stagewise GSEA used as a supplementary analysis supporting the
 Figure 2 interpretation.
 
 The numbered scripts should be run sequentially. Operations 01 through 07
-perform the WGCNA analysis and plotting, operation 08 performs the
+perform the WGCNA analysis and plotting (including the same-module ego networks
+in step `05_bis`), operation 08 performs the
 supplementary GSEA, and operation 09 performs the final reproducibility audit.
 
 Reader-facing companion files at the reproducibility root are:
@@ -122,6 +123,33 @@ Main operations:
 The reference table is part of the plotting specification and must remain with
 the script.
 
+### 5 bis. `05_bis_build_ego_networks.R`
+
+Sources:
+
+- `05_bis_build_ego_networks.R`
+- `reference/ego_network_functional_context_annotations.tsv`
+
+This analysis uses the regenerated Figure 2 network and TOM workspace. Since
+`GetTOM()` returns TOM dissimilarity, edge weights and rankings use
+`TOM_similarity <- 1 - GetTOM_output`. Each index gene retains the genuine top
+20 neighbours ranked by descending TOM similarity within its own module
+(PCSK7: SM_1; PNPLA3: SM_3). No functional gene is force-included.
+
+The annotation table assigns biological-context categories to selected true
+neighbours; unannotated genes are labelled `Other`. It does not alter rankings.
+This analysis was moved from Figure 4 step 06 to Figure 2 step `05_bis`.
+Calculations and plotting settings are unchanged; new figure filenames use
+`Fig2_` and gene names. Legacy `11_` table/log prefixes and F/G export identifiers
+are retained for traceability and do not assign current manuscript panels.
+
+Supply the completed network, matching TOM workspace, module table and annotation
+table through `--network`, `--tom`, `--module-table` and `--annotation`; use new
+directories for `--output-dir` and `--log-dir`. The script validates matching TOM
+values and writes input/output checksums and completion records. See the command
+under Running the workflow. Required packages are hdWGCNA, digest, ggplot2,
+ggrepel and scales.
+
 ### 6. `06_plot_harmonized_module_eigengenes_and_celltype_associations.R`
 
 Generates the remaining hME-based Figure 2 outputs.
@@ -218,7 +246,9 @@ Main operations:
   `reproducibility_logs/Fig2_WGCNA/Fig2_final_audit/`
 
 This audit checks output completeness and internal consistency and performs no
-additional biological analysis.
+additional biological analysis. For step `05_bis`, it checks the source script
+and annotation table; the ego-network script records and validates its own
+outputs during execution.
 
 ## Harmonized module eigengenes
 
@@ -292,6 +322,13 @@ Rscript --vanilla scripts/figure2/02_build_wgcna_network.R
 Rscript --vanilla scripts/figure2/03_bis_analyze_differential_module_eigengenes_donor_level.R
 Rscript --vanilla scripts/figure2/04_export_module_tables_and_run_enrichr.R
 Rscript --vanilla scripts/figure2/05_generate_functionally_colored_hub_networks.R
+Rscript --vanilla scripts/figure2/05_bis_build_ego_networks.R \
+  --network objects/Fig2_WGCNA/02_wgcna_network_modules.rds \
+  --tom objects/Fig2_WGCNA/02_network_workspace/TOM/test_TOM.rda \
+  --module-table results/Fig2_WGCNA/02_network/02_module_assignments_and_kME.tsv \
+  --annotation scripts/figure2/reference/ego_network_functional_context_annotations.tsv \
+  --output-dir results/Fig2_WGCNA/05_bis_ego_networks \
+  --log-dir reproducibility_logs/Fig2_WGCNA/05_bis_ego_networks
 Rscript --vanilla scripts/figure2/06_plot_harmonized_module_eigengenes_and_celltype_associations.R
 Rscript --vanilla scripts/figure2/07_generate_supplementary_wgcna_umaps.R
 Rscript --vanilla scripts/figure2/08_run_supplementary_stage_gsea.R

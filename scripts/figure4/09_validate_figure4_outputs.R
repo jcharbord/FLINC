@@ -28,14 +28,12 @@ expected_scripts <- c(
   "03_run_dorothea_activity.R",
   "04_build_rfx5_regulon.R",
   "05_rfx5_celltype_associations.R",
-  "06_build_ego_networks.R",
   "07_run_secreted_factor_analysis.R",
   "08_plot_secreted_enrichment.R",
   "09_validate_figure4_outputs.R",
   "10_plot_secreted_factor_spatial_context_v6.R",
   "11_plot_SM1_SM6_selected4_BH30.R",
-  "README.md",
-  "ego_network_functional_context_annotations.tsv"
+  "README.md"
 )
 expected_resources <- c(
   "uniprot_human_secreted_only_KW-0964_reviewed.tsv",

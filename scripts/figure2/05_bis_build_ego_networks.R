@@ -115,6 +115,8 @@ role_colours <- c(
   "Metabolism / detoxification" = "#6A1B9A",
   Other = "#BDBDBD"
 )
+# Legacy F/G values in exported panel columns are retained for traceability;
+# output filenames use gene names without assigning new manuscript panel letters.
 specifications <- data.frame(index_gene = c("PCSK7", "PNPLA3"), expected_module = c("SM_1", "SM_3"), panel = c("F", "G"), stringsAsFactors = FALSE)
 top_k <- 20L
 all_ranked <- list(); all_nodes <- list(); all_edges <- list(); plots <- list()
@@ -160,7 +162,7 @@ for (i in seq_len(nrow(specifications))) {
     ggplot2::theme_void(base_size = 11) +
     ggplot2::theme(plot.title = ggplot2::element_text(hjust = 0.5, face = "bold"), plot.subtitle = ggplot2::element_text(hjust = 0.5, size = 8), legend.position = "right", plot.margin = ggplot2::margin(10, 24, 10, 24), panel.border = ggplot2::element_rect(colour = module_border[[actual_module]], fill = NA, linewidth = 1.2))
   plots[[index_gene]] <- p
-  stem <- paste0("Fig4", panel, "_", index_gene, "_ego_top20_extended_functional_context_", actual_module)
+  stem <- paste0("Fig2_", index_gene, "_ego_top20_extended_functional_context_", actual_module)
   ggplot2::ggsave(file.path(result_tmp, paste0(stem, ".pdf")), p, width = 8.5, height = 6.6, device = grDevices::cairo_pdf)
   ggplot2::ggsave(file.path(result_tmp, paste0(stem, ".png")), p, width = 8.5, height = 6.6, dpi = 300, bg = "white")
 }
@@ -179,7 +181,7 @@ atomic_write_table(parameters, file.path(result_tmp, "11_run_parameters.tsv"))
 atomic_write_table(data.frame(package = c("R", required_packages), version = c(R.version.string, vapply(required_packages, function(x) as.character(utils::packageVersion(x)), character(1))), stringsAsFactors = FALSE), file.path(log_tmp, "11_package_versions.tsv"))
 
 finished_at <- Sys.time()
-atomic_write_lines(c("FLINC Figure 4 extended-functional-context ego-network candidate execution summary", paste("Started UTC:", format(started_at, tz = "UTC", usetz = TRUE)), paste("Completed UTC:", format(finished_at, tz = "UTC", usetz = TRUE)), paste("Elapsed seconds:", as.numeric(difftime(finished_at, started_at, units = "secs"))), paste("Network RDS SHA256:", input_hashes$sha256[[1]]), paste("TOM RDA SHA256:", input_hashes$sha256[[2]]), paste("GetTOM interpretation: dissimilarity"), paste("Edge weight: TOM similarity = 1 - GetTOM()"), paste("PCSK7-PNPLA3 similarity audit:", 1 - tom_dissimilarity["PCSK7", "PNPLA3"]), paste("Command:", paste(commandArgs(), collapse = " "))), file.path(log_tmp, "11_execution_summary.txt"))
+atomic_write_lines(c("FLINC Figure 2 extended-functional-context ego-network candidate execution summary", paste("Started UTC:", format(started_at, tz = "UTC", usetz = TRUE)), paste("Completed UTC:", format(finished_at, tz = "UTC", usetz = TRUE)), paste("Elapsed seconds:", as.numeric(difftime(finished_at, started_at, units = "secs"))), paste("Network RDS SHA256:", input_hashes$sha256[[1]]), paste("TOM RDA SHA256:", input_hashes$sha256[[2]]), paste("GetTOM interpretation: dissimilarity"), paste("Edge weight: TOM similarity = 1 - GetTOM()"), paste("PCSK7-PNPLA3 similarity audit:", 1 - tom_dissimilarity["PCSK7", "PNPLA3"]), paste("Command:", paste(commandArgs(), collapse = " "))), file.path(log_tmp, "11_execution_summary.txt"))
 atomic_write_lines(capture.output(sessionInfo()), file.path(log_tmp, "11_sessionInfo.txt"))
 
 result_files <- sort(list.files(result_tmp, full.names = TRUE, recursive = FALSE))
@@ -190,4 +192,4 @@ atomic_write_lines("SUCCESS", file.path(log_tmp, "11_COMPLETED.txt"))
 if (!file.rename(result_tmp, output_dir)) fail("Could not atomically publish results")
 if (!file.rename(log_tmp, log_dir)) fail("Could not atomically publish logs")
 completed <- TRUE
-message("Figure 4 ego networks completed successfully.")
+message("Figure 2 ego networks completed successfully.")

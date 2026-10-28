@@ -260,6 +260,7 @@ canonical_scripts <- file.path(
     "03_bis_analyze_differential_module_eigengenes_donor_level.R",
     "04_export_module_tables_and_run_enrichr.R",
     "05_generate_functionally_colored_hub_networks.R",
+    "05_bis_build_ego_networks.R",
     "06_plot_harmonized_module_eigengenes_and_celltype_associations.R",
     "07_generate_supplementary_wgcna_umaps.R",
     "08_run_supplementary_stage_gsea.R",
@@ -275,7 +276,7 @@ documentation <- c(
 reference_files <- file.path(
   scripts_dir,
   "reference",
-  "functional_subcategories.tsv"
+  c("functional_subcategories.tsv", "ego_network_functional_context_annotations.tsv")
 )
 
 check_required_files(

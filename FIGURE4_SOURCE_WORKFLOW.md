@@ -1,4 +1,4 @@
-# Figure 4 source workflow: regulatory, network, and secreted-factor analyses
+# Figure 4 source workflow: regulatory and secreted-factor analyses
 
 ## Scope
 
@@ -15,10 +15,15 @@ The workflow uses the regenerated final Seurat object and the regenerated Figure
 | 03 | `scripts/figure4/03_run_dorothea_activity.R` | DoRothEA A/B transcription-factor activity and donor-level inference (Figure 4C). |
 | 04 | `scripts/figure4/04_build_rfx5_regulon.R` | RFX5 A/B regulon, restricted to targets observed in the regenerated object (Figure 4D). |
 | 05 | `scripts/figure4/05_rfx5_celltype_associations.R` | Within-stage spot-level RFX5/cell-type fraction associations (Figure 4E). |
-| 06 | `scripts/figure4/06_build_ego_networks.R` | PCSK7 and PNPLA3 strict top-20 same-module TOM-neighbour ego networks (Figure 4F/G). |
 | 07 | `scripts/figure4/07_run_secreted_factor_analysis.R` | Strict secreted-factor selection and mean-expression ranking (Figure 4H/I and supplementary counts). |
 | 08 | `scripts/figure4/08_plot_secreted_enrichment.R` | Readable supplementary enrichment rendering from the versioned enrichment reference table. |
 | 09 | `scripts/figure4/09_validate_figure4_outputs.R` | Public-package validation and SHA-256 manifest generation. |
+| 10 | `scripts/figure4/10_plot_secreted_factor_spatial_context_v6.R` | Spatial-cluster summaries and maps; historical BH4 donor profiles are superseded by step 11. |
+| 11 | `scripts/figure4/11_plot_SM1_SM6_selected4_BH30.R` | Final SM_1/SM_6 donor profiles; Spearman tests across all 30 genes per module with separate within-module BH correction. |
+
+The former step 06 (PCSK7/PNPLA3 ego networks) now belongs to
+[Figure 2](FIGURE2_SOURCE_WORKFLOW.md#pcsk7-and-pnpla3-same-module-ego-networks).
+Existing Figure 4 script numbers are preserved.
 
 ## Main analytical definitions
 
@@ -34,21 +39,16 @@ The workflow uses the regenerated final Seurat object and the regenerated Figure
 
 `03_run_dorothea_activity.R` uses the human DoRothEA A/B regulon with `norm_wmean`, 1,000 permutations, and seed 42. Deterministic spot batching is used solely to stay within memory limits; an equivalence audit verifies agreement with an unbatched subset. `04_build_rfx5_regulon.R` uses only RFX5 A/B targets that are actually present and non-zero in the regenerated expression object. `05_rfx5_celltype_associations.R` reports descriptive within-stage, spot-level Spearman correlations with deconvolution fractions; these are not interpreted as cell-type-specific causal effects.
 
-### WGCNA ego networks
-
-`06_build_ego_networks.R` uses the regenerated Figure 2 network and TOM workspace. `GetTOM()` returns TOM **dissimilarity**, so all edge weights and rankings use:
-
-```r
-TOM_similarity <- 1 - GetTOM_output
-```
-
-For each index gene, the plot contains the genuine top 20 genes ranked by descending TOM similarity within the same regenerated module. No functional gene is force-included. Node roles are controlled by the versioned `ego_network_functional_context_annotations.tsv` table; unannotated neighbours are labelled `Other`.
-
 ### Strict secreted factors and enrichment rendering
 
 `07_run_secreted_factor_analysis.R` applies the predefined strict secretion rule to the versioned UniProt snapshot: signal peptide present, no transmembrane feature, and no membrane localisation. Genes are then ranked by mean log-normalised spatial expression within their regenerated WGCNA module.
 
 The public resource directory also contains compact reference tables used to verify the historical-equivalent count/ranking results and to render the supplementary enrichment panel. The enrichment panel is rendered from a versioned reference table rather than from a live GO/KEGG web request; this avoids silently changing database mappings between reruns. The input secreted-gene lists and WGCNA universes were checked to be identical to the reference inputs before rendering.
+
+Step 11 plots four selected factors per module using the full BH30 correction.
+It requires the saved manifests and validation exports described in the
+[Figure 4 guide](scripts/figure4/README.md#validation-inputs-required-for-reproducibility);
+a fresh checkout alone is not sufficient to run it.
 
 ## Versioned small resources
 
@@ -60,9 +60,6 @@ resources/Fig4_secreted_factor/
   reference_secreted_counts_by_module.csv
   reference_top30_secreted_factors_by_module.csv
   reference_secreted_enrichment_top2.csv
-
-scripts/figure4/
-  ego_network_functional_context_annotations.tsv
 ```
 
 ## Inputs intentionally excluded from Git
@@ -77,8 +74,10 @@ These files remain available in the protected analysis environment. The final sc
 ## Reproduction sequence
 
 1. Recreate or obtain the final Seurat object and Figure 2 WGCNA outputs.
-2. Run scripts 01 through 08 in numerical order, supplying the documented input/output paths.
-3. Run script 09 to validate the public package and generate `FIGURE4_SHA256.txt`.
-4. Compare regenerated local figures/tables with the compact execution records before manuscript use.
+2. Run scripts 01–05, 07 and 08 in numerical order, supplying the documented input/output paths.
+3. Run script 10 for spatial context and script 11 for final donor profiles, using
+   the required saved validation inputs documented in the Figure 4 guide.
+4. Run script 09 to validate the public package and generate `FIGURE4_SHA256.txt`.
+5. Compare regenerated local figures/tables with the compact execution records before manuscript use.
 
 The exact command-line arguments and required files for each script are listed in [`scripts/figure4/README.md`](scripts/figure4/README.md).

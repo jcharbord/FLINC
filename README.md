@@ -15,10 +15,10 @@ The validated workflow links the 24-sample cohort and Space Ranger-derived
 count matrices to shared preprocessing in R, STRIDE deconvolution, and the
 downstream analyses used for Figures 1–4.
 
-**Workflow overview figure:** [View the original FLINC workflow diagram](https://github.com/jcharbord/FLINC_archive/blob/jeremie-jian-reproducible-rerun/Jeremie/Reproducible_code/workflow/FLINC_workflow_overview.png).
+![FLINC spatial transcriptomics workflow overview](workflow/FLINC_workflow_overview.png)
 
-The original PNG is awaiting transfer into this repository; the diagram remains
-available in the private archive at the link above.
+The original diagram is shown above. The PCSK7/PNPLA3 TOM ego-network analysis
+has since moved from Figure 4 to Figure 2, as documented below.
 
 ## Analysis overview
 
@@ -35,26 +35,9 @@ Figure 1 visualization scripts are stored under `scripts/figure1/`. The
 Figure 2 spatial coexpression and supplementary donor-level GSEA workflow is
 stored under `scripts/figure2/`. The Figure 3 LIANA cell-cell communication,
 stage-activity and spatial LR-mapping workflow is stored under
-`scripts/figure3/`. The Figure 4 regulatory, network and strict secreted-factor
+`scripts/figure3/`. The Figure 4 regulatory and strict secreted-factor
 workflow is stored under `scripts/figure4/`. Historical analytical source files for the main spatial
 clustering workflow are retained under `scripts/source_history/`.
-
-## Final manuscript updates
-
-The final donor-level DME script is
-`scripts/figure2/03_bis_analyze_differential_module_eigengenes_donor_level.R`,
-including the final plot formatting. Spot-level module eigengenes are averaged
-within each donor; stage-versus-Healthy contrasts use independent donors and
-BH correction across the six modules within each contrast. The companion `03`
-script is the historical spot-level analysis, not the final inferential result.
-
-The final secreted-factor script is
-`scripts/figure4/11_plot_SM1_SM6_selected4_BH30.R`. It calculates donor-level
-Spearman correlations for all 30 genes per module and applies BH correction
-separately within SM_1 and SM_6. Four selected factors per module are plotted.
-This guarded rerun also requires saved manifests and validation exports listed
-in [the Figure 4 guide](scripts/figure4/README.md#validation-inputs-required-for-reproducibility);
-a fresh checkout alone is not sufficient to run it.
 
 ## Required input data
 
@@ -175,8 +158,8 @@ See `FIGURE1_SOURCE_WORKFLOW.md` for detailed source information.
 
 ## Figure 2 spatial coexpression workflow
 
-The Figure 2 workflow is located in `scripts/figure2/` and contains eight
-numbered analytical and plotting operations followed by a final reproducibility
+The Figure 2 workflow is located in `scripts/figure2/` and contains nine
+analytical and plotting operations followed by a final reproducibility
 audit:
 
 1. preparation of the final annotated spatial-expression object for hdWGCNA
@@ -184,10 +167,22 @@ audit:
 3. donor-level differential harmonized module eigengene analysis (`03_bis`)
 4. module-table export and EnrichR functional enrichment
 5. generation of functionally colored hub-gene networks
-6. hME dot plots, spatial maps and cell-type associations
-7. supplementary module-gene UMAP and harmonized-ME feature maps
-8. independent donor-pseudobulk stagewise GSEA for F1, F2, F3 and F4 versus F0
-9. final output, execution-record and checksum audit
+6. strict same-module PCSK7 and PNPLA3 TOM-similarity ego networks (`05_bis`)
+7. hME dot plots, spatial maps and cell-type associations
+8. supplementary module-gene UMAP and harmonized-ME feature maps
+9. independent donor-pseudobulk stagewise GSEA for F1, F2, F3 and F4 versus F0
+10. final output, execution-record and checksum audit
+
+The final donor-level DME script is
+`scripts/figure2/03_bis_analyze_differential_module_eigengenes_donor_level.R`,
+including the final plot formatting. Spot-level module eigengenes are averaged
+within each donor; stage-versus-Healthy contrasts use independent donors and
+BH correction across the six modules within each contrast. The companion `03`
+script is the historical spot-level analysis, not the final inferential result.
+
+Ego-network edges use TOM similarity defined as `1 - GetTOM()`, because
+`GetTOM()` returns TOM dissimilarity. Each index gene retains its strict top 20
+neighbours within the same module.
 
 Harmonized module eigengenes are used consistently for differential module
 analysis, spatial-domain dot plots, 24-sample spatial maps and spot-level
@@ -248,9 +243,9 @@ checks are not part of the public workflow.
 See `scripts/figure3/README.md` for inputs, software requirements, execution
 order, formulas and output details.
 
-## Figure 4 regulatory, network and secreted-factor workflow
+## Figure 4 regulatory and secreted-factor workflow
 
-The Figure 4 workflow is located in `scripts/figure4/` and contains eight
+The Figure 4 workflow is located in `scripts/figure4/` and contains seven
 core analytical or plotting operations, a public-package validation step,
 and the spatial-context and final donor-profile scripts:
 
@@ -259,18 +254,26 @@ and the spatial-context and final donor-profile scripts:
 3. DoRothEA A/B transcription-factor activity
 4. RFX5 regulon construction from observed DoRothEA targets
 5. RFX5/cell-type deconvolution-fraction associations
-6. strict same-module PCSK7 and PNPLA3 TOM-similarity ego networks
-7. strict secreted-factor selection and expression ranking
-8. versioned enrichment-panel rendering
-9. public-file checksum validation
-10. secreted-factor spatial-cluster summaries and maps
-11. final SM_1/SM_6 donor-level stage profiles with BH correction across 30 genes per module
+6. strict secreted-factor selection and expression ranking
+7. versioned enrichment-panel rendering
+8. public-file checksum validation
+9. secreted-factor spatial-cluster summaries and maps
+10. final SM_1/SM_6 donor-level stage profiles with BH correction across 30 genes per module
 
 The pathway and transcription-factor analyses use donor-level inference; the
-RFX5/fraction correlations and spatial maps are descriptive. Ego-network edges
-use TOM similarity defined explicitly as `1 - GetTOM()` because `GetTOM()`
-returns TOM dissimilarity. Generated objects, broad result folders and rendered
-figures are retained locally rather than committed to Git.
+RFX5/fraction correlations and spatial maps are descriptive. Generated objects,
+broad result folders and rendered figures are retained locally rather than committed to Git.
+
+The final secreted-factor script is
+`scripts/figure4/11_plot_SM1_SM6_selected4_BH30.R`. It calculates donor-level
+Spearman correlations for all 30 genes per module and applies BH correction
+separately within SM_1 and SM_6. Four selected factors per module are plotted.
+This guarded rerun also requires saved manifests and validation exports listed
+in [the Figure 4 guide](scripts/figure4/README.md#validation-inputs-required-for-reproducibility);
+a fresh checkout alone is not sufficient to run it.
+
+Script numbers retain their existing identifiers; the former ego-network step 06
+is now Figure 2 step `05_bis`.
 
 See `FIGURE4_SOURCE_WORKFLOW.md` and `scripts/figure4/README.md` for the
 complete source map, methods, required versioned resources and execution order.
