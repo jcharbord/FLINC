@@ -382,10 +382,9 @@ FLINC_THREADS=4 caffeinate -dimsu Rscript \
   scripts/analysis/02_cluster_annotate_and_characterize_spatial_domains.R
 ```
 
-Figure-specific source scripts can subsequently be run from `scripts/figure1/`.
+Then follow the execution order and input requirements in each figure guide:
 
-The Figure 2 workflow can subsequently be run in the order documented in
-`scripts/figure2/README.md`.
-
-The Figure 3 workflow can subsequently be run in the order documented in
-`scripts/figure3/README.md`.
+- [Figure 1](scripts/figure1/README.md)
+- [Figure 2](scripts/figure2/README.md)
+- [Figure 3](scripts/figure3/README.md)
+- [Figure 4](scripts/figure4/README.md)
