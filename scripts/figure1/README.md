@@ -85,8 +85,9 @@ The function checks the expected 26,056 spots and 24 sample IDs, prints pooled
 means and medians, and writes a new timestamped output directory containing
 summary CSVs, local spot/sample QC tables, PDF and 600-dpi PNG plots, and a
 session record. Black dots indicate sample-specific medians. The public
-[QC resources](../../resources/figure1/results/qc/README.md) contain only the
-cohort-level tables; the matching run record is under
+[QC resources](../../resources/figure1/results/qc/README.md) contain the pooled
+and per-sample technical QC tables. Spot-level QC metadata remains local.
+The matching run record is under
 [`reproducibility_logs/Fig1_QC_20261029/`](../../reproducibility_logs/Fig1_QC_20261029/).
 
 ## Analytical results used directly in Figure 1

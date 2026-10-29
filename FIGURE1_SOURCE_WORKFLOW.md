@@ -122,9 +122,9 @@ The manuscript values, 4,845 detected genes and 20,064 UMIs per spot, are pooled
 medians. The function also calculates means and alternative sample-weighted
 summaries and generates the Supplementary Figure 1D-E violin plots.
 
-The [published QC tables](resources/figure1/results/qc/README.md) are cohort-level
-summaries. Sample-specific and spot-level tables and rendered plots remain
-local. The script neither modifies the source object nor applies additional
+The [published QC tables](resources/figure1/results/qc/README.md) include pooled
+and per-sample technical QC summaries. Spot-level tables and rendered plots
+remain local. The script neither modifies the source object nor applies additional
 filtering, normalization or clustering. Run versions are recorded in
 `reproducibility_logs/Fig1_QC_20261029/sessionInfo.txt`.
 

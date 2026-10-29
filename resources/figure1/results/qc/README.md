@@ -14,6 +14,8 @@ spots contribute more observations to these pooled per-spot summaries.
 
 ## Files
 
+- [QC_by_sample.csv](QC_by_sample.csv): one row per sample, with retained spot
+  counts and mean/median detected genes and Spatial UMIs per spot (24 samples).
 - [QC_overall_spots.csv](QC_overall_spots.csv): spot counts, means, medians,
   quartiles and ranges for both QC metrics.
 - [QC_manuscript_value_check.csv](QC_manuscript_value_check.csv): the two
@@ -28,8 +30,8 @@ The tables were generated on 29 October 2026 by
 [`07_summarize_spatial_QC.R`](../../../../scripts/figure1/07_summarize_spatial_QC.R),
 using `nFeature_Spatial`, `nCount_Spatial` and `donor` in the final annotated
 Seurat object. Recalculation from the corresponding spot-level QC export
-reproduced the published means, medians, quartiles, ranges and alternative
-summary definitions. CSV bytes are unchanged from the completed run.
+reproduced the per-sample spot counts, means and medians, as well as the pooled
+means, medians, quartiles, ranges and alternative summary definitions. CSV bytes are unchanged from the completed run.
 
 Original local output directory, relative to the workflow root:
 
@@ -53,8 +55,9 @@ qc_result <- run_flinc_qc(obj, output_parent = "results")
 This calculates QC summaries and writes per-sample violin plots to a new local
 output folder. Black dots show the median within each sample; these differ
 from the pooled medians reported in the manuscript. The function also exports
-local sample-level and spot-level QC tables. It does not modify the Seurat
+sample-level summaries and local spot-level QC metadata. It does not modify the Seurat
 object, apply additional spot filtering, or rerun normalization or clustering.
 
-Only cohort-level summary tables are distributed in this folder. Sample-level
-QC tables, spot metadata and the Seurat object are not included.
+This folder contains pooled and per-sample technical QC summaries. The
+per-sample table contains sample IDs and QC metrics, without clinical
+annotations. Spot-level metadata and the Seurat object are not included.
