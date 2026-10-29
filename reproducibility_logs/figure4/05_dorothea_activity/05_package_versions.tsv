@@ -1,0 +1,11 @@
+package	version
+R	R version 4.4.3 (2025-02-28)
+Seurat	5.4.0
+SeuratObject	5.3.0
+Matrix	1.7.3
+decoupleR	2.12.0
+dorothea	1.18.0
+digest	0.6.39
+dplyr	1.1.4
+ggplot2	4.0.1
+ggrepel	0.9.6
