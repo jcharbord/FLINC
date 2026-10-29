@@ -1,7 +1,7 @@
 # Figure 1 resources
 
 The [results directory](results/) contains the source tables for cluster
-characterization and donor-level abundance comparisons.
+characterization, donor-level abundance comparisons and pooled spatial QC.
 
 | Files | Purpose |
 | --- | --- |
@@ -12,11 +12,24 @@ characterization and donor-level abundance comparisons.
 | `deconvolution_*_FIXED.csv`, `chordDiagram_*_data.csv` | Cluster-level cell-type summaries and exported chord data. |
 | `final_cluster*_counts.csv`, `approach1_raw_to_final_cluster_mapping.csv` | Final cluster sizes and annotation mapping. |
 | [cluster_proportions/](results/cluster_proportions/) | Donor proportions, stage mean/SEM and statistical comparisons. |
+| [qc/](results/qc/README.md) | Pooled QC summaries for 26,056 spots and verification of the manuscript medians. |
 
 The marker/GO/deconvolution exports come from the Stage 2 analysis script.
 The deconvolution tables retain the original cell-type categories; downstream
 display grouping (for example, pooling immune populations) is a plotting step.
 Not every later display-specific regrouped table is included.
+
+## Spatial QC summaries
+
+[The QC folder](results/qc/README.md) contains three cohort-level tables for
+Supplementary Figure 1D-E. The manuscript values are pooled medians of 4,845
+detected genes and 20,064 Spatial UMIs per spot, across 26,056 spots from 24
+biopsies. The corresponding means are 4,666.37 and 20,916.38.
+
+[`07_summarize_spatial_QC.R`](../../scripts/figure1/07_summarize_spatial_QC.R)
+recreates the summaries and per-sample violin plots from the final Seurat
+object, which remains an external input. Per-sample and per-spot QC tables are
+generated locally rather than included in this QC resource folder.
 
 ## Cluster-proportion comparisons
 
@@ -38,3 +51,4 @@ Rscript scripts/figure1/06_plot_final_cluster_proportions.R \
 ```
 
 Use a new output directory. The script reads the supplied donor proportions.
+

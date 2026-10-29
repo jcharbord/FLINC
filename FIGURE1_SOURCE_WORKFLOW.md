@@ -112,6 +112,22 @@ The presentation workflow does not recalculate clustering, expression,
 deconvolution or biological annotation and does not modify the source
 Seurat object.
 
+## Supplementary spatial QC metrics
+
+Source: `scripts/figure1/07_summarize_spatial_QC.R`.
+
+This function uses `nFeature_Spatial`, `nCount_Spatial` and `donor` metadata in
+the final annotated Seurat object to summarize 26,056 spots from 24 biopsies.
+The manuscript values, 4,845 detected genes and 20,064 UMIs per spot, are pooled
+medians. The function also calculates means and alternative sample-weighted
+summaries and generates the Supplementary Figure 1D-E violin plots.
+
+The [published QC tables](resources/figure1/results/qc/README.md) are cohort-level
+summaries. Sample-specific and spot-level tables and rendered plots remain
+local. The script neither modifies the source object nor applies additional
+filtering, normalization or clustering. Run versions are recorded in
+`reproducibility_logs/Fig1_QC_20261029/sessionInfo.txt`.
+
 ## Figure 1 output validation
 
 Validation source:
@@ -153,3 +169,4 @@ retain selected nominal comparisons. The separate all-pairwise table uses
 Holm correction across ten pairs within each cluster. The final plotter is
 `scripts/figure1/06_plot_final_cluster_proportions.R`; it reads the published
 per-cluster donor proportions and does not rerun clustering.
+

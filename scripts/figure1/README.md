@@ -67,6 +67,28 @@ software/session records, checksums, output counts and palette consistency.
 
 It does not rerun the biological analysis.
 
+## 07_summarize_spatial_QC.R
+
+Calculates pooled and sample-level QC summaries from the final annotated
+object and regenerates the Supplementary Figure 1D-E violin plots. It reads
+`nFeature_Spatial`, `nCount_Spatial` and `donor` metadata without modifying the
+object or rerunning the analysis.
+
+With the approved final object loaded as `obj`, run from the repository root:
+
+```r
+source("scripts/figure1/07_summarize_spatial_QC.R")
+qc_result <- run_flinc_qc(obj, output_parent = "results")
+```
+
+The function checks the expected 26,056 spots and 24 sample IDs, prints pooled
+means and medians, and writes a new timestamped output directory containing
+summary CSVs, local spot/sample QC tables, PDF and 600-dpi PNG plots, and a
+session record. Black dots indicate sample-specific medians. The public
+[QC resources](../../resources/figure1/results/qc/README.md) contain only the
+cohort-level tables; the matching run record is under
+[`reproducibility_logs/Fig1_QC_20261029/`](../../reproducibility_logs/Fig1_QC_20261029/).
+
 ## Analytical results used directly in Figure 1
 
 Several Figure 1 results are produced directly by:
@@ -98,3 +120,4 @@ retain selected nominal comparisons. The separate all-pairwise table uses
 Holm correction across ten pairs within each cluster. The final plotter is
 `scripts/figure1/06_plot_final_cluster_proportions.R`; it reads the published
 per-cluster donor proportions and does not rerun clustering.
+

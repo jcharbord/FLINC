@@ -6,7 +6,7 @@ scripts. There is no separate top-level source-data directory.
 
 | Figure | Contents |
 | --- | --- |
-| [Figure 1](figure1/README.md) | Marker genes, GO enrichment, deconvolution, cluster counts and final donor-level cluster-proportion comparisons. |
+| [Figure 1](figure1/README.md) | Marker genes, GO enrichment, deconvolution, cluster counts, final donor-level cluster-proportion comparisons and pooled spatial QC summaries. |
 | [Figure 2](figure2/README.md) | Module assignments and kME, DME, hub and neighbour lists, cell-type correlations, module enrichment and donor-pseudobulk GSEA. |
 | [Figure 3](figure3/README.md) | Retained LIANA interactions, stage-activity tests, selected interactions, chord/dotplot data and spatial-panel selections. |
 | [Figure 4](figure4/README.md) | PROGENy, DoRothEA, RFX5, secreted-factor rankings, donor expression, final BH30 tests and spatial-cluster summaries. |
@@ -19,11 +19,15 @@ correlation results are different tables.
 
 ## Provenance and integrity
 
-[manifest.tsv](manifest.tsv) records the 131 selected numerical/model exports,
+[manifest.tsv](manifest.tsv) records the 134 selected numerical/model exports,
 their original run paths, row counts, generating scripts and checks performed.
 The six pre-existing curated/reference inputs are retained unchanged and covered
-by the figure manifests and the checksum file below. Tables were supplied in
-`FLINC_review_20261028_185935.zip` and `FLINC_remaining_tables_20261028_192056.zip`.
+by the figure manifests and the checksum file below. The original 131 exports
+were supplied in `FLINC_review_20261028_185935.zip` and
+`FLINC_remaining_tables_20261028_192056.zip`. Three pooled spatial QC tables
+were exported separately on 29 October 2026 and checked against the matching
+spot-level QC metadata. Their source and summary definitions are described in
+[the QC guide](figure1/results/qc/README.md).
 Original paths are relative to the local `Reproducible_code/` directory.
 
 No table values were edited. Selected larger text tables were gzip-compressed;
@@ -48,3 +52,4 @@ the full unfiltered LIANA aggregate table, the MSigDB term-to-gene snapshot and
 assembled manuscript figures are not included. The figure guides describe
 external dependencies and remaining plot-specific inputs. Donor codes are the
 original analytical identifiers; no additional clinical metadata was added.
+
