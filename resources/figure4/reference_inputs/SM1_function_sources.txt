@@ -1,0 +1,22 @@
+Gene-function reference. Compiled 2026-11-02 for all 1,652 FLINC SM_1 features. These annotations play no role in selecting or ranking neighbours.
+Pinned Bioconductor 3.22 package tarballs (MD5 verified against its PACKAGES index).
+https://bioconductor.posit.co/packages/3.22/data/annotation/src/contrib/org.Hs.eg.db_3.22.0.tar.gz   e80cac6ec018a95aea4f7530350e80a2
+https://bioconductor.posit.co/packages/3.22/data/annotation/src/contrib/GO.db_3.22.0.tar.gz   5ae5557afa56227c4c9c145907b1f585
+Package metadata: Homo sapiens NCBI Entrez Gene and GO associations as of 2025-09-24, GO ontology as of 2025-07-22.
+FLINC gene is matched first to a unique exact NCBI symbol, then to a unique exact alias only. Ambiguous and unmapped features are retained. NCBI names, symbols, Entrez Gene IDs and links provide general annotation.
+hla_gene is the HLA- prefix of the mapped NCBI symbol (HLA class I and class II are both included). The three independent GO flags test direct or inherited GOALL annotations to the predefined seeds below. Evidence-code lists are propagated to seeds and can include computational/electronic annotations. A TRUE flag means at least one seed matched, FALSE means none matched among known annotations and NA marks lack of informative GO coverage. Flags are overlapping features, not an exhaustive classification or a gene-set enrichment analysis. mhc_ii includes the class II complex, assembly, peptide antigen presentation and its regulation; ecm includes localization and matrix organization, disassembly and structural constituents; actin includes actin structure, organization, movement and binding.
+mhc_ii: GO:0042613 MHC class II protein complex; GO:0002504 antigen processing and presentation of peptide or polysaccharide antigen via MHC class II; GO:0002399 MHC class II protein complex assembly; GO:0002580 regulation of antigen processing and presentation of peptide or polysaccharide antigen via MHC class II
+ecm: GO:0031012 extracellular matrix; GO:0030198 extracellular matrix organization; GO:0022617 extracellular matrix disassembly; GO:0005201 extracellular matrix structural constituent
+actin: GO:0015629 actin cytoskeleton; GO:0030036 actin cytoskeleton organization; GO:0030048 actin filament-based movement; GO:0003779 actin binding
+Representative direct BP, MF and CC columns show up to 3 positive, non-root, non-ND terms per aspect. Ranked by evidence (experimental, then TAS or IC, then other non-IEA, then IEA), then by fewer directly annotated human genes, then term name. n_direct_GO counts distinct non-root direct terms across all three aspects. Optional interpretation of gene function should consider full source annotations.
+mapping_status counts in all SM_1: {'exact_symbol': 1599, 'unique_alias': 52, 'ambiguous': 1}
+go_status counts in all SM_1: {'GO_annotated': 1631, 'unmapped_or_ambiguous': 1, 'no_informative_GO': 20}
+hla_gene counts in all SM_1: {'FALSE': 1641, 'NA': 1, 'TRUE': 10}
+mhc_ii counts in all SM_1: {'FALSE': 1612, 'TRUE': 19, 'NA': 21}
+ecm counts in all SM_1: {'FALSE': 1462, 'TRUE': 169, 'NA': 21}
+actin counts in all SM_1: {'FALSE': 1367, 'TRUE': 264, 'NA': 21}
+
+Reviewed protein names and additional links are provided by UniProtKB/Swiss-Prot (UniProt Consortium, release 2026_03, 2 September 2026, downloaded 2 November 2026). These columns match the original FLINC symbol exactly against primary human gene symbols. UniProt_mapping describes unavailable or multiple reviewed matches. This optional lookup has no effect on GO category assignments, gene selection or rank.
+https://rest.uniprot.org/uniprotkb/stream?format=tsv&query=reviewed%3Atrue+AND+organism_id%3A9606&fields=accession%2Cgene_primary%2Cprotein_name%2Cgo_p%2Cgo_c%2Cgo_f
+https://www.uniprot.org/help/license
+Gene Ontology Consortium, GO annotations and ontology, https://geneontology.org/docs/go-citation-policy/
